@@ -112,6 +112,18 @@ footer {
   color: #888;
   font-size: 14px;
 }
+.links {
+  margin-top: 10px;
+}
+.links a {
+  margin-right: 5px;
+  color: #888;
+  font-size: 18px;
+  transition: 0.5s;
+}
+.links a:hover {
+  color: #f9372d;
+}
 
 
 
@@ -147,24 +159,13 @@ footer {
 }
 .home-heading span {
   display: block;
-  font-size: 32px;
+  font-size: 40px;
   font-family: 'Pretendard-ExtraBold';
   white-space:nowrap;
 }
 .home-heading b {
   font-size: 32px;
   font-weight: bold;
-}
-.links {
-  margin-top: 30px;
-}
-.links a {
-  margin-right: 5px;
-  font-size: 24px;
-  transition: 0.5s;
-}
-.home-heading a:hover {
-  color: #f9372d;
 }
 @keyframes morph {
   0% {
@@ -183,29 +184,8 @@ footer {
   background-color: #fff;
 }
 .about-inner {
-  width: 800px;
+  width: 830px;
   margin: auto;
-}
-.about-photo {
-  position: relative;
-  width: 100%;
-  height: 400px;
-  margin-bottom: 30px;
-}
-.about-photo::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: calc(100% - 20px);
-  height: calc(100% - 20px);
-  border: 2px solid #fff;
-}
-.about-photo img {
-  width: inherit;
-  height: inherit;
-  object-fit: cover;
 }
 .about-inner h2 {
   font-size: 32px;
@@ -218,10 +198,13 @@ footer {
   margin-top: 30px;
   overflow: hidden;
 }
+.about-career {
+  margin-top: 30px;
+}
 .about-desc p,
 .about-desc p span,
-.about-right h4,
-.about-right > div ul li {
+.about-career h4,
+.about-career > div ul li {
   font-size: 16px;
   line-height: 1.8em;
   color: #333;
@@ -229,27 +212,25 @@ footer {
 .about-desc p span {
   color: #f9372d;
 }
-.about-left {
-  float: left;
-  width: 55%;
-}
-.about-right {
-  float: right;
-  width: 45%;
-  padding-left: 30px;
-}
-.about-right > div {
+.about-career > div {
   display: flex;
+  margin-bottom: 10px;
 }
-.about-right h4 {
-  width: 85px;
+.about-career h4 {
+  width: 100px;
   color: #222;
+}
+.about-career ul {
+  border-left: 1px solid #ddd;
+}
+.about-career li {
+  padding-left: 20px;
 }
 
 /* ━━━━━━━━━━━━━━━━━━━━━━━━ Section : Skills ━━━━━━━━━━━━━━━━━━━━━━━━ */
 #skills {}
 .skills-inner {
-  width: 800px;
+  width: 830px;
   margin: auto;
 }
 .skills-items {
@@ -326,14 +307,144 @@ footer {
 /* ━━━━━━━━━━━━━━━━━━━━━━━━ Section : Portfolio ━━━━━━━━━━━━━━━━━━━━━━━━ */
 #portfolio {}
 .portfolio-inner {
-  width: 800px;
+  width: 830px;
   margin: auto;
+  overflow: hidden;
 }
-.portfolio-section {}
-.portfolio-tabs {}
-.portfolio-tab {}
+.portfolio-inner span {
+  float: right;
+  color: #926d62;
+  font-size: 14px;
+}
+.tab-section {
+  position: relative;
+}
+.portfolio-section input[name="portfolio"] {
+  display: none;
+}
+input[id="portfolio1"]:checked ~ .btn-tabs label[for="portfolio1"],
+input[id="portfolio2"]:checked ~ .btn-tabs label[for="portfolio2"],
+input[id="portfolio3"]:checked ~ .btn-tabs label[for="portfolio3"],
+input[id="portfolio4"]:checked ~ .btn-tabs label[for="portfolio4"] {
+  color: #222;
+}
+.portfolio-tabs {
+  min-height: 765px;
+  border: 1px solid transparent;
+}
+.portfolio-tab {
+  display: none;
+  animation: reveal 0.4s both;
+}
+input[id="portfolio1"]:checked ~ .portfolio-tabs .portfolio-tab:nth-of-type(1),
+input[id="portfolio2"]:checked ~ .portfolio-tabs .portfolio-tab:nth-of-type(2),
+input[id="portfolio3"]:checked ~ .portfolio-tabs .portfolio-tab:nth-of-type(3),
+input[id="portfolio4"]:checked ~ .portfolio-tabs .portfolio-tab:nth-of-type(4) {
+  display: block;
+}
+@keyframes reveal {
+  0% {
+    margin-top: 30px;
+    opacity: 0;
+  }
+  100% {
+    margin-top: 0;
+    opacity: 1;
+  }
+}
+.portfolio-tab h3 {
+  padding: 20px 0;
+  font-size: 40px;
+  text-align: center;
+  text-transform: capitalize;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+}
+.portfolio-tab p {
+  padding: 0 20px;
+  color: #444;
+  line-height: 1.5em;
+}
 .portfolio-tab img {
   width: 100%;
   height: 450px;
   object-fit: cover;
+}
+.btn-area {
+  margin-top: 40px;
+  text-align: center;
+}
+.btn-area a {
+  display: inline-block;
+  position: relative;
+  margin: 0 3px;
+  padding: 5px 15px;
+  border: 1px solid #000;
+  transition: 0.4s;
+  overflow: hidden;
+}
+.btn-area a::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%);
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  transition: 0.4s;
+}
+.btn-area a:hover {
+  color: #fff;
+}
+.btn-area a:hover::before {
+  top: 0;
+}
+.btn-tabs {
+  position: absolute;
+  right: 0;
+  top: -69px;
+}
+.btn-tabs label {
+  display: block;
+  float: left;
+  font-size: 16px;
+  text-align: center;
+  transition: 0.4s;
+  color: #888;
+}
+.btn-tabs label:nth-child(1) {
+  width: 60px;
+}
+.btn-tabs label:nth-child(2) {
+  width: 110px;
+}
+.btn-tabs label:nth-child(3),
+.btn-tabs label:nth-child(4) {
+  width: 130px;
+}
+.btn-tabs label:hover {
+  color: #f9372d;
+  letter-spacing: 2px;
+}
+
+/* featherlight custom */
+.featherlight .featherlight-content {
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  margin: 0;
+}
+.featherlight .featherlight-inner {
+  width: 100%;
+  height: 100%;
+}
+.featherlight .featherlight-close-icon {
+  width: 80px;
+  height: 80px;
+  background-color: #f9372d;
+  color: #fff;
+  line-height: 80px;
+  font-size: 50px;
 }

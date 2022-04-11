@@ -1,5 +1,7 @@
 @charset "utf-8";
 
+/* Google Web Font : Raleway */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap');
 /* Noonu Web Font : 프리텐다드 Extra Bold */
 @font-face {
   font-family: 'Pretendard-ExtraBold';

@@ -5,6 +5,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>갈라토닉 | 웹 퍼블리셔 포트폴리오</title>
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+  <!-- FeatherLight JS -->
+  <script src="./js/featherlight/featherlight.min.js"></script>
+  <link rel="stylesheet" href="./js/featherlight/featherlight.min.css">
   <!-- XEICON CDN -->
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
   <!-- Custom JS & CSS -->
@@ -39,6 +46,10 @@
       <footer>
         <div class="footer-inner">
           <span>ⓒ <em>2022 GARLATONIC</em></span>
+          <div class="links">
+            <a href="#git" class="xi-github"></a>
+            <a href="#git" class="xi-mail"></a>
+          </div>
         </div>
       </footer>
     </div>
@@ -51,49 +62,38 @@
               <span>Hello <b>?</b></span>
               <span>I'm Park Sang-A ,</span>
               <span>a new web publisher</span>
-              <div class="links">
-                <a href="#git" class="xi-github"></a>
-                <a href="#git" class="xi-mail"></a>
-              </div>
             </div>
           </div>
         </div>
       </section>
       <section id="about">
         <div class="about-inner">
-          <div class="about-photo">
-            <img src="./images/about_photo.jpg" alt="프로필">
-          </div>
           <h2>박상아 <span>@garlatonic</span></h2>
           <div class="about-desc">
-            <div class="about-left">
-              <p>
-                안녕하세요, 강한 책임감과 열정을 가진 <span>신입 웹퍼블리셔</span> 박상아입니다.
-              </p>
-              <p>
-                사용자 입장에서 쉽게 접근할 수 있는 웹 구축을 위해서 팀원들과 소통하며 구조화된 마크업으로 개발하기 위해 노력하고 있습니다. 
-              </p>
-              <p>
-                여기서 그치지않고 더 한발 나아가기 위해서 끊임없이 노력하며 늘 배우고 탐구하는 웹 퍼블리셔가 되고자 합니다.
-              </p>
+            <p>
+              안녕하세요, 강한 책임감과 열정을 가진 <span>신입 웹퍼블리셔</span> 박상아입니다.
+            </p>
+            <p>
+              사용자 입장에서 쉽게 접근할 수 있는 웹 구축을 위해서 팀원들과 소통하며 구조화된 마크업으로 개발하기 위해 노력하고 있습니다. 
+            </p>
+            <p>
+              여기서 그치지않고 더 한발 나아가기 위해서 끊임없이 노력하며 늘 배우고 탐구하는 웹 퍼블리셔가 되고자 합니다.
+            </p>
+          </div>
+          <div class="about-career">
+            <div class="education">
+              <h4>Education</h4>
+              <ul>
+                <li>2021.06 - 2022.01 웹 퍼블리셔 양성 교육과정 이수</li>
+                <li>2020.02 조선대학교 기계공학과 졸업</li>
+              </ul>
             </div>
-            <div class="about-right">
-              <div class="education">
-                <h4>Education</h4>
-                <ul>
-                  <li>2021.06 - 2022.01</li>
-                  <li>웹 퍼블리셔 양성 교육과정 이수</li>
-                  <li>2020.02</li>
-                  <li>조선대학교 기계공학과 졸업</li>
-                </ul>
-              </div>
-              <div class="license">
-                <h4>License</h4>
-                <ul>
-                  <li>정보처리기사</li>
-                  <li>운전면허증</li>
-                </ul>
-              </div>
+            <div class="license">
+              <h4>License</h4>
+              <ul>
+                <li>정보처리기사</li>
+                <li>운전면허증</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -163,18 +163,39 @@
         <div class="coding-inner">
           <h4 class="section-title-box">coding</h4>
           <h2 class="section-title">practical coding</h2>
+          <div class="coding-section tab-section">
+            <input type="radio" name="coding" id="coding1" checked>
+            <input type="radio" name="coding" id="coding2">
+            <input type="radio" name="coding" id="coding3">
+            <input type="radio" name="coding" id="coding4">
+          </div>
         </div>
       </section>
       <section id="portfolio">
         <div class="portfolio-inner">
           <h4 class="section-title-box">portfolio</h4>
           <h2 class="section-title">web site portfolio</h2>
-          <div class="portfolio-section">
-            <input type="radio" name="portfolio" id="portfolio1">
+          <div class="portfolio-section tab-section">
+            <input type="radio" name="portfolio" id="portfolio1" checked>
             <input type="radio" name="portfolio" id="portfolio2">
             <input type="radio" name="portfolio" id="portfolio3">
             <input type="radio" name="portfolio" id="portfolio4">
             <div class="portfolio-tabs">
+              <div class="portfolio-tab">
+                <img src="./images/portfolio_clova.jpg" alt="클로바">
+                <h3>clova</h3>
+                <p>
+                  기존에 존재하는 네이버 클로바 소개 홈페이지를 클론코딩한 결과물입니다. 하나의 index파일로 모바일 웹까지 지원할 수 있도록 미디어 쿼리를 사용해 반응형 웹 사이트로 제작하였습니다. 제작에 사용된 모든 이미지는 클로바 홈페이지에서 추출하여 사용했습니다.
+                </p>
+                <p>
+                  레이아웃 배치는 모바일에 쉽게 적응할 수 있도록 flex 속성을 중점으로 사용하였습니다. 간단한 코드로 슬라이드를 만들 수 있는 slick, 스크롤 시 애니메이션이 작동하는 aos 플러그인을 커스텀하여 사용했습니다.
+                </p>
+                <div class="btn-area">
+                  <a href="http://sangahosting.dothome.co.kr/clova/" data-featherlight="iframe">PC Ver</a>
+                  <a href="./html/tablet-mockup-clova.html" data-featherlight="iframe">Tablet Ver</a>
+                  <a href="./html/mobile-mockup-clova.html" data-featherlight="iframe">Mobile Ver</a>
+                </div>
+              </div>
               <div class="portfolio-tab">
                 <img src="./images/portfolio_sulhwasoo.jpg" alt="설화수">
                 <h3>sulhwasoo</h3>
@@ -183,23 +204,53 @@
                   추출했으며, 그 외는 픽사베이 등의 저작권 무료 사이트에서 다운로드했습니다.
                 </p>
                 <p>
-                  레이아웃 배치는 float, postion, flex를 활용했습니다.
-                </p>
-                <p>
-                  간단히 슬라이드를 만들 수 있는 slick 플러그인을 커스텀하여 사용했습니다.
+                  레이아웃 배치는 float, postion, flex를 활용했으며, 간단히 슬라이드를 만들 수 있는 slick 플러그인을 커스텀하여 사용했습니다.
                 </p>
                 <div class="btn-area">
-                  <a href="#">PC</a>
-                  <a href="#">Tablet</a>
-                  <a href="#">Mobile</a>
+                  <a href="http://sangahosting.dothome.co.kr/sulhwasoo/" data-featherlight="iframe">PC Ver</a>
+                  <a href="./html/tablet-mockup-sulhwasoo.html" data-featherlight="iframe">Tablet Ver</a>
+                  <a href="./html/mobile-mockup-sulhwasoo.html" data-featherlight="iframe">Mobile Ver</a>
+                </div>
+              </div>
+              <div class="portfolio-tab">
+                <img src="./images/portfolio_startup-mate.jpg" alt="스타트업메이트">
+                <h3>startup mate</h3>
+                <p>
+                  인프런 코딩웍스님의 강의를 토대로 작업한 반응형 웹 사이트 결과물입니다. 기존 웹 사이트 제작 방식인 float와 position 속성을 이용해 레이아웃을 배치했습니다.
+                </p>
+                <p>
+                  간단한 코드로 슬라이드를 만들 수 있는 slick, 스크롤 시 애니메이션이 작동하는 wow 플러그인을 커스텀하여 사용했습니다.
+                </p>
+                <div class="btn-area">
+                  <a href="http://sangahosting.dothome.co.kr/responsive_2/" data-featherlight="iframe">PC Ver</a>
+                  <a href="./html/tablet-mockup-startupmate.html" data-featherlight="iframe">Tablet Ver</a>
+                  <a href="./html/mobile-mockup-startupmate.html" data-featherlight="iframe">Mobile Ver</a>
+                </div>
+              </div>
+              <div class="portfolio-tab">
+                <img src="./images/portfolio_design-works.jpg" alt="설화수">
+                <h3>design works</h3>
+                <p>
+                  인프런 코딩웍스님의 강의를 토대로 작업한 반응형 웹 사이트 결과물입니다. 기존 웹 사이트 제작 방식인 float와 position 속성을 이용해 레이아웃을 배치했습니다.
+                </p>
+                <p>
+                  간단한 코드로 슬라이드를 만들 수 있는 slick, 스크롤 시 애니메이션이 작동하는 wow 플러그인을 커스텀하여 사용했습니다.
+                </p>
+                <div class="btn-area">
+                  <a href="http://sangahosting.dothome.co.kr/responsive_1/" data-featherlight="iframe">PC Ver</a>
+                  <a href="./html/tablet-mockup-designworks.html" data-featherlight="iframe">Tablet Ver</a>
+                  <a href="./html/mobile-mockup-designworks.html" data-featherlight="iframe">Mobile Ver</a>
                 </div>
               </div>
             </div>
-            <label for="portfolio1">clova</label>
-            <label for="portfolio2">sulhwasoo</label>
-            <label for="portfolio3">design works</label>
-            <label for="portfolio4">startup mate</label>
+            <div class="btn-tabs">
+              <label for="portfolio1">clova</label>
+              <label for="portfolio2">sulhwasoo</label>
+              <label for="portfolio3">design works</label>
+              <label for="portfolio4">startup mate</label>
+            </div>
           </div>
+          <span>* 본 섹션은 데스크톱 사용환경에 최적화되어 있습니다.</span>
         </div>
       </section>
     </div>
