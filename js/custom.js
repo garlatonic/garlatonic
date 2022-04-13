@@ -13,12 +13,12 @@ $(function(){
   $('.toggle').click(function(){ // 네비 펼치기
     $('body, .toggle, .overlay, nav').toggleClass('active');
   })
-  $('nav a').click(function(){  // 네비 닫기
-    $('.toggle, .overlay, nav').removeClass('active');
+  $('.overlay, nav a').click(function(){  // 네비 닫기
+    $('body, .toggle, .overlay, nav').removeClass('active');
   })
 
   /* Smooth Sliding */
-  $('.logo a, nav a, .btn-top').click(function(e){
+  $('.logo a, nav a, .home-heading a, .btn-top').click(function(e){
     e.preventDefault();
     $.scrollTo(this.hash || 0, 900);
   });
