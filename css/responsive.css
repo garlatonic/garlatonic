@@ -1,1 +1,213 @@
 @charset "utf-8";
+
+@media (max-width: 1280px) {
+  /* Default CSS */
+  section {
+    padding: 80px 40px;
+  }
+
+  /* ━━━━━━━━━━━━━━━━━━━━━━━━ Header ━━━━━━━━━━━━━━━━━━━━━━━━ */
+  /* ━━━━━━━━━━━━━━━━━━━━━━━━ Section : Home ━━━━━━━━━━━━━━━━━━━━━━━━ */
+  .home-photo {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    border: 10px solid #ffc412;
+    background: url('../images/home_photo.jpg') no-repeat center;
+    background-size: cover;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    animation: morph 8s ease-in-out infinite;
+  }
+  .home-heading h5 {
+    font-size: 36px;
+  }
+  .home-heading h2{
+    width: 470px;
+    font-size: 54px;
+  }
+
+  /* ━━━━━━━━━━━━━━━━━━━━━━━━ Section : About ━━━━━━━━━━━━━━━━━━━━━━━━ */
+  .about-inner {
+    width: 100%;
+  }
+
+  /* ━━━━━━━━━━━━━━━━━━━━━━━━ Section : Skills ━━━━━━━━━━━━━━━━━━━━━━━━ */
+  .skills-inner {
+    width: 100%;
+  }
+
+  /* ━━━━━━━━━━━━━━━━━━━━━━━━ Section : Portfolio ━━━━━━━━━━━━━━━━━━━━━━━━ */
+  .portfolio-inner {
+    width: 100%;
+  }
+
+  /* ━━━━━━━━━━━━━━━━━━━━━━━━ Footer ━━━━━━━━━━━━━━━━━━━━━━━━ */
+  footer {
+    padding: 50px 40px;
+  }
+  .footer-inner {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1020px) {
+  /* ━━━━━━━━━━━━━━━━━━━━━━━━ Section : Home ━━━━━━━━━━━━━━━━━━━━━━━━ */
+  .home-inner {
+    min-height: 765px;
+  }
+  .home-info {
+    flex-direction: column-reverse;
+    margin-top: 40px;
+  }
+  .home-heading {
+    margin: 0;
+    margin-top: 30px;
+  }
+
+  /* ━━━━━━━━━━━━━━━━━━━━━━━━ Section : About ━━━━━━━━━━━━━━━━━━━━━━━━ */
+  .about-career h4,
+  .about-career > div ul,
+  .about-career span {
+    font-size: 15px;
+    line-height: 1.8em;
+    color: #333;
+  }
+  .about-career h4 {
+    width: 95px;
+  }
+  .about-career ul {
+    width: calc(100% - 95px);
+  }
+  .about-career span {
+    display: block;
+  }
+
+  /* ━━━━━━━━━━━━━━━━━━━━━━━━ Section : Skills ━━━━━━━━━━━━━━━━━━━━━━━━ */
+  .skills-items {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(33.3%, auto));
+    grid-template-rows: repeat(3, minmax(230px, auto));
+    gap: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  /* Default CSS */
+  body {
+    font-size: 16px;
+  }
+  section {
+    padding: 50px 30px;
+  }
+
+  /* ━━━━━━━━━━━━━━━━━━━━━━━━ Header ━━━━━━━━━━━━━━━━━━━━━━━━ */
+  .header-inner {
+    padding: 0 30px;
+  }
+  /* ━━━━━ Header - Trigger ━━━━━ */
+  .toggle,
+  .overlay {
+    right: 30px;
+  }
+  /* ━━━━━ Header - Nav ━━━━━ */
+  .nav-inner ul li a {
+    font-size: 50px;
+  }
+
+  /* ━━━━━━━━━━━━━━━━━━━━━━━━ Section : Home ━━━━━━━━━━━━━━━━━━━━━━━━ */
+  .home-inner {
+    min-height: 600px;
+  }
+  .home-photo {
+    width: 300px;
+    height: 300px;
+  }
+  .home-heading h5 {
+    font-size: 36px;
+  }
+  .home-heading h5 {
+    font-size: 24px;
+  }
+  .home-heading h2{
+    width: 300px;
+    font-size: 36px;
+  }
+
+  /* ━━━━━━━━━━━━━━━━━━━━━━━━ Section : About ━━━━━━━━━━━━━━━━━━━━━━━━ */
+  .about-contents,
+  .about-career {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .about-contents > div:nth-child(3) {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+  }
+
+  /* ━━━━━━━━━━━━━━━━━━━━━━━━ Section : Skills ━━━━━━━━━━━━━━━━━━━━━━━━ */
+  .skills-items {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, minmax(160px, auto));
+    gap: 10px;
+  }
+  .skills-item h2 {
+    font-size: 20px;
+    white-space: pre-wrap;
+  }
+  .skills-hover {
+    padding: 20px;
+  }
+  .skills-hover h3 {
+    padding: 0 0 10px;
+    font-size: 20px;
+  }
+  .skills-hover p {
+    font-size: 12px;
+  }
+
+  /* ━━━━━━━━━━━━━━━━━━━━━━━━ Section : Portfolio ━━━━━━━━━━━━━━━━━━━━━━━━ */
+  .portfolio-inner {
+    text-align: center;
+  }
+  .portfolio-inner span {
+    text-align: right;
+    font-size: 12px;
+  }
+  .portfolio-tabs {
+    margin-top: 20px;
+  }
+  .portfolio-tab p {
+    padding: 0;
+    text-align: left;
+  }
+  .btn-tabs {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: -40px;
+    width: 100%;
+  }
+  .btn-tabs label {
+    font-size: 12px;
+  }
+  .btn-tabs label:hover {
+    color: #ffc312;
+    letter-spacing: normal;
+  }
+  
+  /* ━━━━━━━━━━━━━━━━━━━━━━━━ Footer ━━━━━━━━━━━━━━━━━━━━━━━━ */
+  footer {
+    padding: 20px 30px;
+  }
+  .footer-inner a,
+  .footer-inner span {
+    font-size: 14px;
+    color: #666;
+  }
+  .footer-inner > div {
+    float: none;
+    padding: 5px;
+    text-align: center;
+  }
+}

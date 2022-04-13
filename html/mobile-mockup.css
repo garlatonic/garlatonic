@@ -4,12 +4,14 @@ body {
   display: flex;
   justify-content: center;
   width: 100vw;
+  height: 100vh;
   margin: 0;
   overflow-x: hidden;
   background-color: rgba(0, 0, 0, 0.7);
 }
 .mockup {
-  margin: 20px;
+  display: flex;
+  align-items: center;
 }
 .mobile-mockup {
   display: flex;
@@ -27,8 +29,10 @@ body {
   top: 49%;
   transform: translate(-50%, -50%);
   width: 375px;
-  height: 700px;
+  height: 710px;
   background: #fff;
+  border-radius: 5px;
+  overflow: hidden;
 }
 .iframe-url iframe {
   width: 100%;

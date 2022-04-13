@@ -1,0 +1,40 @@
+@charset "uft-8";
+
+/* Google Web Font : Noto Sans Korean */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+/* Google Web Font : Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Reset CSS */
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  margin: 0;
+  background-color: #fff;
+  color: #222;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+a {
+  text-decoration: none;
+  color: #222;
+}
+ul {
+  padding: 0;
+}
+ul li {
+  list-style: none;
+}
+button {
+  outline: none;
+}
+h1, h2 {
+  font-family: 'Montserrat', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  font-weight: normal;
+  line-height: 1.5em;
+}

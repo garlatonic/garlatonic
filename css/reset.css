@@ -21,7 +21,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: 18px;
 }
 ul li { list-style: none; }
 a {
@@ -32,6 +31,7 @@ body {
   background-color: #f8f8f8;
   color: #222;
   font-family: 'Pretendard-Regular';
+  font-size: 18px;
 }
 h1, h2, h3, h4, h5, h6  {
   font-family: 'Pretendard-ExtraBold';

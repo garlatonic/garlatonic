@@ -1,0 +1,544 @@
+@charset "utf-8";
+
+@media (max-width: 1240px) {
+  /* Default CSS */
+  body {
+    font-size: 16px;
+    line-height: 1.5em;
+  }
+  section {
+    padding: 80px 30px;
+  }
+
+  /* Common CSS */
+  h2.section-title {
+    font-size: 36px;
+  }
+  p.section-text {
+    font-size: 18px;
+  }
+
+  /* ━━━━━━━━━━━━━━━━━━━ Header ━━━━━━━━━━━━━━━━━━━ */
+  .header-inner {
+    width: 100%;
+    padding: 0 30px;
+  }
+
+  /* ━━━━━━━━━━━━━━━━━━━ Section : welcome ━━━━━━━━━━━━━━━━━━━ */
+  /* ━━━━━━━━━━━━━━━━━━━ Section : intro ━━━━━━━━━━━━━━━━━━━ */
+  .intro-inner {
+    width: 100%;
+  }
+  .intro-left {
+    width: 60%;
+    padding-top: 20px;
+    padding-right: 50px;
+  }
+  .intro-left h2 {
+    padding-bottom: 10px;
+  }
+
+
+  /* ━━━━━━━━━━━━━━━━━━━ Section : procedure ━━━━━━━━━━━━━━━━━━━ */
+  .procedure-inner {
+    width: 100%;
+    padding: 0 30px;
+  }
+  .procedure-contents {
+    gap: 15px;
+  }
+  .procedure-item {
+    padding: 20px;
+  }
+  .procedure-icon {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+  }
+  .procedure-icon i {
+    font-size: 30px;
+    line-height: 50px;
+    transition: 0.5s;
+  }
+  .procedure-item h3 {
+    font-size: 20px;
+  }
+  .procedure-item p {
+    font-size: 14px;
+  }
+
+  /* ━━━━━━━━━━━━━━━━━━━ Section : banner ━━━━━━━━━━━━━━━━━━━ */
+  .banner-inner {
+    height: 250px;
+  }
+  .banner-text h2 {
+    font-size: 48px;
+  }
+  .banner-text p {
+    font-size: 18px;
+  }
+
+  /* ━━━━━━━━━━━━━━━━━━━ Section : service ━━━━━━━━━━━━━━━━━━━ */
+  .service-inner {
+    width: 100%;
+  }
+  .service-contents {
+    gap: 15px;
+  }
+  .img-hover {
+    height: 150px;
+  }
+  .service-desc {
+    padding: 20px;
+    text-align: center;
+  }
+  .service-desc h3 {
+    font-size: 20px;
+  }
+  .service-desc p {
+    font-size: 14px;
+  }
+
+  /* ━━━━━━━━━━━━━━━━━━━ Section : amenities ━━━━━━━━━━━━━━━━━━━ */
+  #amenities {
+    padding: 0;
+    padding-top: 80px;
+  }
+  .amenities-contents {
+    grid-template-rows: repeat(2, minmax(auto, 240px));
+  }
+  .amenities-item-desc {
+    padding: 30px;
+  }
+  .amenities-item-desc h2 {
+    font-size: 24px;
+  }
+  .amenities-item-desc p {
+    font-size: 14px;
+  }
+
+  /* ━━━━━━━━━━━━━━━━━━━ Section : faq ━━━━━━━━━━━━━━━━━━━ */
+  .faq-inner {
+    width: 100%;
+  }
+
+  /* ━━━━━━━━━━━━━━━━━━━ Section : reservation ━━━━━━━━━━━━━━━━━━━ */
+  .reservation-inner {
+    width: 100%;
+  }
+  .location-map {
+    width: 60%;
+  }
+  .reservation-form {
+    width: 40%;
+  }
+
+  /* ━━━━━━━━━━━━━━━━━━━ Footer ━━━━━━━━━━━━━━━━━━━ */
+  footer {
+    padding: 30px;
+  }
+  .footer-inner {
+    width: 100%;
+  }
+}
+
+@media (max-width: 986px) {
+  /* ━━━━━━━━━━━━━━━━━━━ Header ━━━━━━━━━━━━━━━━━━━ */
+  /* trigger */
+  #trigger {
+    display: block;
+  }
+  /* overlay */
+  .overlay-top,
+  .overlay-bottom {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #fff;
+    transition: 0.6s;
+  }
+  .overlay-top {
+    top: 0;
+  }
+  .overlay-bottom {
+    bottom: 0;
+  }
+  .overlay-top.active,
+  .overlay-bottom.active {
+    height: 60vh;
+  }
+
+  /* nav */
+  nav {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.4s;
+  }
+  nav.active {
+    opacity: 1;
+    pointer-events: all;
+  }
+  .nav-inner {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-inner ul li {
+    float: none;
+  }
+  .menu a {
+    font-size: 40px;
+    font-weight: bold;
+    padding: 0 20px;
+    line-height: 2em;
+    color: #222;
+  }
+  .menu a span::before {
+    height: 5px;
+  }
+  .etc-menu {
+    margin: 0;
+    margin-top: 50px;
+  }
+  .etc-menu li {
+    display: flex;
+  }
+  .etc-menu a {
+    display: block;
+    padding: 10px 20px;
+    width: 100%;
+    font-size: 18px;
+    color: #222;
+    transition: 0.4s;
+  }
+  .etc-menu a:hover ~ .message {
+    color: #f53b57;
+  }
+  .message {
+    display: block;
+    position: absolute;
+    left: 60px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    color: #000;
+    font-size: 16px;
+    transition: 0.4s;
+  }
+  .etc-menu li:first-child .message,
+  .etc-menu li:last-child .message {
+    width: auto;
+  }
+  .message::before {
+    display: none;
+  }
+
+  /* ━━━━━━━━━━━━━━━━━━━ Section : welcome ━━━━━━━━━━━━━━━━━━━ */
+  /* ━━━━━━━━━━━━━━━━━━━ Section : intro ━━━━━━━━━━━━━━━━━━━ */
+  .intro-left {
+    width: 60%;
+    padding-top: 0;
+    padding-right: 20px;
+  }
+  .intro-left h2 span {
+    display: block;
+    font-size: 16px;
+    line-height: 1.3em;
+  }
+  .intro-left p {
+    padding-top: 10px;
+  }
+  .intro-right img {
+    height: 200px;
+    object-fit: cover;
+  }
+
+  /* ━━━━━━━━━━━━━━━━━━━ Section : procedure ━━━━━━━━━━━━━━━━━━━ */
+  .procedure-contents {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .procedure-item {
+    flex-direction: row;
+    border: none;
+    border-bottom: 1px solid #eee;
+  }
+  .procedure-item:last-of-type {
+    border: none;
+  }
+  .procedure-icon {
+    width: 80px;
+    height: 80px;
+  }
+  .procedure-icon i {
+    width: 80px;
+    font-size: 30px;
+    line-height: 80px;
+  }
+  .procedure-desc {
+    margin-left: 10px;
+  }
+  .procedure-item h3 {
+    font-size: 24px;
+  }
+  .procedure-item p {
+    font-size: 15px;
+  }
+  .procedure-item:hover {
+    box-shadow: none;
+  }
+
+  /* ━━━━━━━━━━━━━━━━━━━ Section : banner ━━━━━━━━━━━━━━━━━━━ */
+  /* ━━━━━━━━━━━━━━━━━━━ Section : service ━━━━━━━━━━━━━━━━━━━ */
+  .service-contents {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .service-item {
+    display: flex;
+    flex-direction: row;
+  }
+  .service-item:last-of-type {
+    border: none;
+  }
+  .img-hover {
+    width: 30%;
+    height: 100%;
+  }
+  .service-desc {
+    width: 70%;
+    padding: 20px;
+  }
+  .service-desc h3 {
+    font-size: 24px;
+  }
+  .service-desc p {
+    font-size: 15px;
+  }
+
+  /* ━━━━━━━━━━━━━━━━━━━ Section : amenities ━━━━━━━━━━━━━━━━━━━ */
+  .amenities-contents {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, minmax(auto, 200px));
+  }
+  .amenities-contents > div:nth-child(1) {
+    order: 1;
+  }
+  .amenities-contents > div:nth-child(2) {
+    order: 2;
+  }
+  .amenities-contents > div:nth-child(3) {
+    order: 4;
+  }
+  .amenities-contents > div:nth-child(4) {
+    order: 3;
+  }
+  .amenities-contents > div:nth-child(5) {
+    order: 5;
+  }
+  .amenities-contents > div:nth-child(6) {
+    order: 6;
+  }
+
+  /* ━━━━━━━━━━━━━━━━━━━ Section : faq ━━━━━━━━━━━━━━━━━━━ */
+
+  /* ━━━━━━━━━━━━━━━━━━━ Section : reservation ━━━━━━━━━━━━━━━━━━━ */
+  .location-map,
+  .reservation-form {
+    width: 50%;
+  }
+  .reservation-form h2 span::before,
+  .reservation-form h2 span::after {
+    width: 50px;
+  }
+}
+
+@media (max-width: 767px) {
+  /* header, */
+  /* nav, */
+  /* #welcome, */
+  /* #intro, */
+  /* #procedure, */
+  /* #banner, */
+  /* #service, */
+  /* #amenities, */
+  /* #faq, */
+  /* #reservation, */
+  footer {
+    /* display: none; */
+  }
+
+  /* Default CSS */
+  section {
+    padding: 50px 20px;
+  }
+
+  /* Common CSS */
+  h2.section-title {
+    font-size: 32px;
+  }
+
+  /* ━━━━━━━━━━━━━━━━━━━ Header ━━━━━━━━━━━━━━━━━━━ */
+  .header-inner {
+    padding: 0 20px;
+  }
+  /* trigger */
+  #trigger {
+    right: 20px;
+  }
+  /* nav */
+  .menu a {
+    font-size: 30px;
+    padding: 0;
+  }
+
+  /* ━━━━━━━━━━━━━━━━━━━ Section : welcome ━━━━━━━━━━━━━━━━━━━ */
+  .welcome-heading h3 {
+    font-size: 14px;
+  }
+  .welcome-heading h2 {
+    font-size: 40px;
+  }
+
+  /* ━━━━━━━━━━━━━━━━━━━ Section : intro ━━━━━━━━━━━━━━━━━━━ */
+  .intro-inner > div {
+    float: none;
+    width: 100%;
+  }
+  .intro-left {
+    padding: 0;
+    padding-bottom: 30px;
+  }
+  .intro-left h2 span {
+    font-size: 15px;
+}
+
+  /* ━━━━━━━━━━━━━━━━━━━ Section : procedure ━━━━━━━━━━━━━━━━━━━ */
+  .procedure-item {
+    padding: 5px;
+  }
+  .procedure-icon {
+    width: 50px;
+    height: 50px;
+  }
+  .procedure-icon i {
+    width: 50px;
+    font-size: 30px;
+    line-height: 50px;
+  }
+  .procedure-item:hover i {
+    font-size: 44px;
+  }
+  .procedure-item h3 {
+    font-size: 18px;
+  }
+  .procedure-item p {
+    font-size: 12px;
+  }
+
+  /* ━━━━━━━━━━━━━━━━━━━ Section : banner ━━━━━━━━━━━━━━━━━━━ */
+  .banner-inner {
+    height: 220px;
+  }
+  .banner-text h2 {
+    font-size: 40px;
+  }
+  .banner-text p {
+    font-size: 18px;
+  }
+
+  /* ━━━━━━━━━━━━━━━━━━━ Section : service ━━━━━━━━━━━━━━━━━━━ */
+  .service-item {
+    flex-direction: column;
+  }
+  .service-item > div {
+    width: 100%;
+  }
+  .service-desc {
+    padding: 10px;
+  }
+  .service-item h3 {
+    font-size: 18px;
+  }
+  .service-item p {
+    font-size: 12px;
+  }
+
+  /* ━━━━━━━━━━━━━━━━━━━ Section : amenities ━━━━━━━━━━━━━━━━━━━ */
+  .amenities-contents {
+    grid-template-rows: repeat(3, minmax(auto, 180px));
+  }
+  .amenities-item-desc {
+    padding: 15px;
+  }
+  .amenities-item-desc h2 {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+  }
+  .amenities-item-desc h2::after {
+    width: 50px;
+    height: 3px;
+  }
+  .amenities-item-desc p {
+    font-size: 12px;
+  }
+
+  /* ━━━━━━━━━━━━━━━━━━━ Section : faq ━━━━━━━━━━━━━━━━━━━ */
+  .faq-item > div {
+    padding: 10px 20px 10px 40px;
+  }
+  .faq-question::before {
+    left: 5px;
+  }
+
+  /* ━━━━━━━━━━━━━━━━━━━ Section : reservation ━━━━━━━━━━━━━━━━━━━ */
+  /* ━━━━━━━━━━━━━━━━━━━ Section : reservation ━━━━━━━━━━━━━━━━━━━ */
+  .reservation-contents {
+    flex-direction: column;
+  }
+  .location-map,
+  .reservation-form {
+    width: 100%;
+  }
+  .location-map {
+    height: 200px;
+  }
+  .reservation-form {
+    padding-top: 40px;
+    padding-left: 0;
+  }
+  .reservation-form h2 span::before,
+  .reservation-form h2 span::after {
+    width: 50px;
+  }
+  .reservation-form h2 span::before,
+  .reservation-form h2 span::after {
+    width: 200%;
+  }
+
+  /* ━━━━━━━━━━━━━━━━━━━ Footer ━━━━━━━━━━━━━━━━━━━ */
+  footer {
+    padding: 30px 20px;
+  }
+  .footer-inner {
+    flex-direction: column;
+  }
+  .footer-inner span {
+    font-size: 12px;
+    color: #666;
+  }
+  .footer-inner h1.logo {
+    text-align: center;
+  }
+  .copyright {
+    margin-top: 20px;
+    margin-left: 0;
+  }
+}
+

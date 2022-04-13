@@ -1,0 +1,1015 @@
+@charset "utf-8";
+
+/* Google Web Font : Montserrat */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500&display=swap');
+/* Google Web Font : Manrope */
+@import url('https://fonts.googleapis.com/css?family=Manrope:300,400,500,600&display=swap');
+/* Google Web Font : Source Sans Pro */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+/* Google Web Font : Overpass */
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+
+/* FontAwesome CDN 4.7 */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+/* Reset CSS */
+* { box-sizing: border-box; }
+ul { padding: 0; list-style: none; }
+a { text-decoration: none; }
+.clear { clear: both; }
+
+/* Default CSS */
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #222;
+  font-size: 15px;
+  margin: 0;
+  height: 100vh;
+  background-color: #fff;
+}
+
+/* Entire Layout */
+.cd-section {
+  height: 100vh;
+}
+.cd-section > div {
+  position: relative;
+  height: 100%;
+}
+.content {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  width: calc(100% - 40px); /* 좌20px 우20px을 뺀 값 */
+  height: calc(100% - 80px); /* 상60px 하20px을 뺀 값 */
+  background-color: #ddd;
+  overflow: hidden;
+}
+
+/* Header */
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+.gnb-inner {
+  /* border: 1px solid #000; */
+  width: calc(100% - 40px);
+  height: 60px;
+  margin: auto;
+  line-height: 60px;
+}
+.logo {
+  float: left;
+}
+.logo img {
+  padding-top: 17px;
+}
+.gnb {
+  float: right;
+}
+.menu { display: none; }
+.slogan {
+  font-size: 16px;
+  font-style: italic;
+}
+.trigger {
+  display: none;
+}
+
+/* Hiring Button */
+.btn-hiring {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  padding: 10px 20px;
+  background-color: #000;
+  border-radius: 20px;
+  box-shadow: 5px 5px 20px #000;
+  color: #fff;
+  transition: 0.4s;
+}
+.btn-hiring i {
+  transform: rotateY(180deg);
+  margin-right: 5px;
+}
+.btn-hiring:active{ /* 가상클래스를 통해 클릭하는 느낌을 줌 */
+  transform: scale(0);
+}
+
+/* #################### Section : Home #################### */
+.home-inner {
+  height: 100%;
+  background-color: #fff;
+}
+.home-inner::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: #000;
+  animation: overlay 1s 2s ease-in-out;
+}
+.welcome-text {
+  /* display: none; */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  font-size: 50px;
+  font-weight: normal;
+  text-align: center;
+  line-height: 1.2em;
+  font-family: 'Source Sans Pro', sans-serif;
+  animation: slideUp 2s 0s linear;
+  animation-fill-mode: both; /* animation이 끝나면 끝 상태로 유지 */
+}
+.welcome-text span {
+  display: block;
+  font-size: 26px;
+  color: #777;
+}
+.welcome-text span i {
+  color: crimson;
+}
+.opacity-image {
+  height: 100%;
+  background: url("./images/section-bg-01.jpg") no-repeat center;
+  background-size: cover;
+  opacity: 0;
+  animation: opacity-image 1s 2.8s ease both;
+}
+.home-heading {
+  position: absolute;
+  left: 250px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.home-heading span {
+  display: block;
+  color: #fff;
+  font-size: 115px;
+  font-weight: bold;
+  width: 0;
+  overflow: hidden;
+  animation: reveal-text 1s 3s ease-in both;
+}
+.home-heading span:nth-child(1) {
+  animation-delay: 3s;
+}
+.home-heading span:nth-child(2) {
+  animation-delay: 3.2s;
+}
+.home-heading span:nth-child(3) {
+  animation-delay: 3.4s;
+}
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    margin-top: 50px;
+  }
+  20% {
+    opacity: 1;
+    margin-top: 0;
+  }
+  80% {
+    opacity: 1;
+    margin-top: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes overlay {
+  0% {
+    left: 0;
+    width: 0;
+  }
+  50% {
+    left: 0;
+    width: 100%;
+  }
+  100% {
+    left: 100%;
+    width: 0;
+  }
+}
+@keyframes opacity-image {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes reveal-text {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+/* #################### Section : about #################### */
+.about-inner {
+  height: 100%;
+  background: url('./images/line-drawing.png') no-repeat right bottom, #0dace3;
+}
+.about-items {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 60%;
+  margin-left: 100px;
+  color: #fff;
+}
+.item {
+  margin-bottom: 20px;;
+  overflow: hidden;
+}
+.item:hover img {
+  filter: invert(0);
+}
+.item img {
+  float: left;
+  height: 120px;
+  margin-right: 20px;
+  filter: invert(1); /* 이미지의 색상 반전 */
+  transition: 0.4s;
+}
+.item h3 {
+  margin: 0;
+  transition: 0.4s;
+  font-size: 28px;
+  font-weight: 500;
+}
+.item:hover h3 {
+  color: #000;
+}
+.item p {
+  font-size: 18px;
+  overflow: hidden;
+}
+
+/* #################### Section : project #################### */
+.project-inner {
+  height: 100%;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+.tabs {
+  width: 300%;
+  height: 100%;
+  transition: 0.4s;
+}
+.tab {
+  float: left;
+  width: calc(100%/3);
+  height: 100%;
+}
+.tab > div {
+  float: left;
+  height: 100%;
+}
+.project-info {
+  width: 25%;
+}
+.project-photo {
+  width: 75%;
+  overflow: hidden;
+}
+input[name="tabmenu"] {
+  display: none;
+}
+.btn {
+  position: absolute;
+  left: 0;
+  bottom: 30px;
+  width: 25%;
+  text-align: center;
+}
+.btn label {
+  display: inline-block;
+  position: relative;
+  width: 5px;
+  height: 5px;
+  margin: 10px;
+  background-color: #000;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.btn label::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: -6px;
+  top: -6px;
+  width: 17px;
+  height: 17px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+.btn label:hover::before {
+  border: 1px solid #ddd;
+}
+input[id="tab1"]:checked ~ .btn label[for="tab1"]::before {
+  border: 1px solid #aaa;
+}
+input[id="tab2"]:checked ~ .btn label[for="tab2"]::before {
+  border: 1px solid #aaa;
+}
+input[id="tab3"]:checked ~ .btn label[for="tab3"]::before {
+  border: 1px solid #aaa;
+}
+input[id="tab1"]:checked ~ .tabs {
+  margin-left: 0;
+}
+input[id="tab2"]:checked ~ .tabs {
+  margin-left: calc(-100% - 1px);
+}
+input[id="tab3"]:checked ~ .tabs {
+  margin-left: calc(-200% - 1px);
+}
+
+/* Project info */
+.project-info {
+  position: relative;
+  padding: 30px;
+}
+.project-info h3 {
+  position: relative;
+  font-size: 20px;
+}
+.project-info p {
+  position: relative;
+  font-size: 16px;
+  line-height: 1.3em;
+}
+.project-info ul {
+  margin: 20px 0;
+  line-height: 1.6em;
+}
+.project-info ul li::before {
+  content:"\f105";
+  font-family: fontawesome;
+  margin-right: 10px;
+}
+.detail {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.detail div {
+  /* display: inline-block; */
+  width: calc(100%/3);
+  color: #999;
+  font-size: 12px;
+  text-align: center;
+}
+.detail div span {
+  display: block;
+  margin-bottom: 10px;
+  color: #000;
+  font-size: 30px;
+  font-weight: bold;
+}
+.view-project {
+  display: inline-block;
+  position: relative;
+  width: 200px;
+  padding: 10px 20px;
+  background-color: #3f3f3f;
+  color: #fff;
+  font-size: 13px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.4s;
+}
+.view-project:hover {
+  background-color: #000;
+}
+.view-project::after {
+  content:"\f178";
+  font-family: fontawesome;
+  margin-left: 20px;
+  transition: 0.4s;
+}
+.view-project:hover::after {
+  margin-left: 35px;
+}
+.project-info::before {
+  content: attr(data-text);
+  position: absolute;
+  left: 10px;
+  top: -10px;
+  color: #ddd;
+  font-size: 130px;
+  font-weight: bold;
+}
+.project-photo img {
+  min-height: 950px;
+}
+
+/* Slick.js Custom CSS */
+.project-photo .slick-arrow {
+  display: none !important;
+}
+.project-photo .slick-dots {
+  display: none !important;
+}
+
+/* #################### Section : plan #################### */
+.plan-inner {
+  height: 100%;
+  background-color: #1d1b24;
+}
+.plan-feature {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+}
+.plan-feature > div {
+  color: #bbb;
+}
+.plan-info > div {
+  float: left;
+}
+.plan-heading {
+  width: 70%;
+  padding-right: 60px;
+}
+.plan-heading h2, .history-info h2 {
+  margin: 0;
+  color: #fff;
+}
+.plan-heading p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.4em;
+}
+.plan-photo {
+  width: 30%;
+  overflow: hidden;
+}
+.plan-photo img {
+  height: 265px;
+}
+.plan-heading hr.bar, .history-info hr.bar {
+  display: inline-block;
+  background-color: dodgerblue;
+}
+.history-info {
+  margin-top: 20px;
+}
+.history-slider div h4 {
+  margin: 0;
+  color: #fff;
+  font-size: 18px;
+  font-weight: normal;
+}
+.history-slider div h4 span {
+  color: dodgerblue
+}
+.history-slider div p {
+  font-size: 14px;
+  line-height: 1.5em;
+}
+/* Slick.js Custom CSS */
+.history-slider .slick-arrow {
+  display: none !important; /* 클래스 선택해서 사라지지 않을 때 */
+}
+.history-slider .slick-dots li button:before {
+  color: #fff;
+  font-size: 40px;
+}
+.history-info .slick-dots li {
+  margin: 0 !important;
+}
+
+/* #################### Section : awards winner #################### */
+.awards-inner {
+  height: 100%;
+}
+.awards-inner > div {
+  float: left;
+  position: relative;
+  width: 50%;
+  height: 100%;
+}
+.about-awards {
+  background-color: #1a1f24;
+  color: #fff;
+}
+.about-heading {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  text-align: center;
+}
+.victory-jump {
+  background-color: #fff;
+}
+.victory-jump img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+}
+.about-heading h2 {
+  margin: 0;
+}
+hr.bar {
+  width: 50px;
+  height: 4px;
+  margin: 30px auto;
+  border: none;
+  background-color: crimson;
+}
+.about-heading p {
+  /* margin-bottom: 20px; */
+  color: #999;
+  font-size: 16px;
+  line-height: 1.5em; /* 부모요소의 크깃값에 따라 달라지는 em! font-size에 따라서 달라짐 */
+}
+.view-awards {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 5px 15px;
+  color: #bbb;
+  border: 1px solid #bbb;
+  border-radius: 20px;
+  transition: 0.4s;
+}
+.view-awards:hover {
+  background-color: #31c0ce;
+  border-color: transparent;
+  color: #fff;
+}
+
+/* #################### Section : location #################### */
+.location-inner {
+  position: relative;
+  height: 100%;
+  background: url(./images/background-location.jpg) no-repeat center;
+  background-size: cover;
+}
+.location-inner::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+.feature {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  color: #bbb;
+}
+.feature > div {
+  float: left;
+}
+.office {
+  width: 60%;
+  padding-right: 50px;
+}
+.service {
+  width: 40%;
+}
+.office b {
+  font-weight: normal;
+}
+.office h2 {
+  margin: 0;
+  color: #1db1f0;
+  font-weight: 500;
+}
+.office p {
+  font-size: 16px;
+  line-height: 1.5em;
+}
+.office span {
+  display: block;
+  color: #fff;
+  font-size: 14px;
+}
+.customer {
+  margin-top: 40px;
+}
+.service-item {
+  margin-bottom: 60px;
+}
+.service-item:last-child {
+  margin-bottom: 0;
+}
+.service-item i {
+  color: #1db1f0;
+  font-size: 40px;
+}
+.service-item h3 {
+  margin: 0;
+  color: #fff;
+  font-size: 22px;
+}
+
+/* #################### Section : contact #################### */
+.contact-inner {
+  height: 100%;
+  background: #fff;
+}
+.contact-feature {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 70%;
+}
+.contact-feature > div {
+  float: left;
+  width: 50%;
+  padding: 20px;
+}
+.contact-form h3 {
+  margin: 0;
+  font-size: 30px;
+  font-weight: normal;
+}
+.send-box label {
+  display: block;
+  margin: 10px 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+.send-box label span {
+  margin-left: 2px;
+  color: crimson;
+  font-weight: normal;
+}
+.send-box input[type=email],
+.send-box input[type=text],
+.send-box textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  outline: none;
+  transition: 0.4s;
+}
+.send-box input[type=email]:hover,
+.send-box input[type=text]:hover,
+.send-box textarea:hover {
+  border: 1px solid #0088cc;
+  box-shadow: 0 0 5px #0088cc;
+}
+.send-box input[type=email]:focus,
+.send-box input[type=text]:focus,
+.send-box textarea:focus {
+  background-color: #eee;
+}
+.send-box button {
+  margin-top: 10px;
+  padding: 12px 20px;
+  background-color: #0088cc;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.send-box button:hover {
+  background-color: #000;
+}
+.info-item {
+  padding-top: 10px;
+  border-top: 1px solid #ddd;
+}
+.info-item:first-child {
+  padding: 0;
+  border: none;
+}
+.info-item h4 {
+  margin: 0;
+  font-weight: normal;
+  font-size: 20px;
+}
+.info-item li {
+  line-height: 2em; /* body 15px * 2 = 30px */
+}
+.info-item i {
+  margin-right: 5px;
+}
+.info-item:nth-child(1) i {
+  width: 25px;
+  height: 25px;
+  border: 1px solid #0dace3;
+  border-radius: 50%;
+  color: #0dace3;
+  font-size: 12px;
+  line-height: 25px;
+  text-align: center;
+}
+.info-item li:last-child {
+  color: #0dace3;
+}
+
+/* #################### SubPage : Hiring #################### */
+.modal {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.header {
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+  z-index: 999;
+}
+.header-inner {
+  width: 95%;
+  height: 90px;
+  margin: auto;
+  line-height: 90px;
+  border-bottom: 1px solid #ddd;
+}
+.modal-display {
+  font-size: 18px;
+}
+
+.hiring-main {
+  position: relative;
+  height: 600px;
+}
+.hiring-heading {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.hiring-heading span {
+  position: relative;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.hiring-heading span::before,
+.hiring-heading span::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 50px;
+  height: 2px;
+  background-color: #000;
+}
+.hiring-heading span::before {
+  right: 110%;
+}
+.hiring-heading span::after {
+  left: 110%;
+}
+.hiring-heading h1 {
+  margin: 0;
+  margin-top: 40px;
+  font-size: 100px;
+  font-weight: 200;
+}
+
+.modal {
+  padding-bottom: 30px;
+}
+.hiring-info {
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+.hiring-info > div {
+  float: left;
+  width: 50%;
+  height: 600px;
+}
+.center-parent {
+  position: relative;
+}
+.center-child {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+}
+.center-child h2 {
+  font-size: 32px;
+  font-weight: normal;
+}
+.center-child p {
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 1.5em;
+}
+.photo {
+  overflow: hidden;
+}
+.photo img {
+  width: 100%;
+}
+
+.hiring-slogan {
+  padding: 150px 0;
+}
+.hiring-slogan p {
+  position: relative;
+  width: 70%;
+  margin: auto;
+  font-size: 32px;
+  font-weight: 300;
+  text-align: center;
+}
+.hiring-slogan p::before {
+  content: ",,";
+  position: absolute;
+  left: -65px;
+  top: -85px;
+  z-index: -1;
+  transform: rotate(180deg);
+  color: #ddd;
+  font-size: 200px;
+  font-family: 'Overpass', sans-serif;
+}
+
+.hiring-contact ul {
+  display: inline-block;
+  width: 49%;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.6em;
+}
+.hiring-contact ul li:first-child {
+  font-weight: 400;
+}
+.hiring-contact ul li:last-child {
+  color: dodgerblue;
+}
+
+.sns a {
+  display: inline-block;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  margin: 2px;
+  border-radius: 50%;
+  color: #000;
+  font-size: 15px;
+  line-height: 30px;
+  text-align: center;
+  transition: 0.4s;
+}
+.sns a::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) scale(0);
+  z-index: -1;
+  width: inherit; /* 부모요소 값 상속 */
+  height: inherit;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+.sns a:hover {
+  color: #fff;
+}
+.sns a:hover::before {
+  transform: translateX(-50%) scale(1);
+}
+.sns a:nth-child(1)::before {
+  background-color: #1877F2;
+}
+.sns a:nth-child(2)::before {
+  background-color: #1DA1F2;
+}
+.sns a:nth-child(3)::before {
+  background-color: #0A66C2;
+}
+.sns a:nth-child(4)::before {
+  background-color: #E4405F;
+}
+.sns a:nth-child(5)::before {
+  background-color: #CD201F;
+}
+.sns a:nth-child(6)::before {
+  background-color: #02B875;
+}
+
+/* #################### SubPage : Project Detail #################### */
+.hiring-main.project-main1 {
+  background: url(./images/project-modal-main-01.jpg) no-repeat center;
+}
+.hiring-main.project-main2 {
+  background: url(./images/project-modal-main-02.jpg) no-repeat center;
+}
+.hiring-main.project-main3 {
+  background: url(./images/project-modal-main-03.jpg) no-repeat center;
+}
+.hiring-main.project-main1,
+.hiring-main.project-main2,
+.hiring-main.project-main3 {
+  height: 100vh;
+  background-size: cover;
+}
+.hiring-main.project-main1 .hiring-heading,
+.hiring-main.project-main2 .hiring-heading,
+.hiring-main.project-main3 .hiring-heading {
+  width: 100%;
+  color: #fff;
+  animation: slideDown 1s linear both;
+}
+.hiring-main.project-main1 .hiring-heading h1,
+.hiring-main.project-main2 .hiring-heading h1,
+.hiring-main.project-main3 .hiring-heading h1 {
+  font-size: 70px;
+}
+.hiring-main.project-main1 .hiring-heading span::before,
+.hiring-main.project-main1 .hiring-heading span::after,
+.hiring-main.project-main2 .hiring-heading span::before,
+.hiring-main.project-main2 .hiring-heading span::after,
+.hiring-main.project-main3 .hiring-heading span::before,
+.hiring-main.project-main3 .hiring-heading span::after {
+  background-color: #fff
+}
+.project-detail .hiring-info {
+  margin: 0;
+}
+.project-detail .hiring-slogan p::before {
+  left: -110px;
+}
+.photo.project-info {
+  padding-top: 120px;
+  font-size: 20px;
+  font-weight: 300;
+}
+.photo.project-info b {
+  font-weight: 600;
+}
+
+@keyframes slideDown {
+  0% {
+    margin-top: -50px;
+    opacity: 0;
+  }
+  100% {
+    margin-top: 0;
+    opacity: 1;
+  }
+}
+
+/* Featherlight CSS */
+.featherlight .featherlight-content {
+  position: relative;
+  text-align: left;
+  vertical-align: middle;
+  display: inline-block;
+  overflow: auto;
+  padding: 0;
+  border-bottom: 25px solid transparent;
+  margin-left: 0;
+  margin-right: 0;
+  max-height: 100%;
+  background: #fff;
+  cursor: auto;
+  white-space: normal;
+  width: 100%;
+  height: 100%;
+}
+.featherlight iframe {
+  border: none;
+  width: 100%;
+  height: 100%;
+}
+.featherlight .featherlight-close-icon {
+  position: absolute;
+  z-index: 9999;
+  top: 35px;
+  right: 70px;
+  line-height: 25px;
+  width: 25px;
+  cursor: pointer;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background: #fff;
+  background: rgba(255, 255, 255, 0.3);
+  color: #000;
+  border: none;
+  padding: 0;
+  font-size: 30px;
+}

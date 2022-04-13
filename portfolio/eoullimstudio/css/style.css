@@ -1,0 +1,699 @@
+@charset "uft-8";
+
+/* Default CSS */
+body {
+  font-size: 18px;
+  line-height: 1.8em;
+}
+section {
+  padding: 100px 0;
+  overflow: hidden;
+}
+
+/* Common CSS */
+header.active {
+  background-color: #fff;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+}
+header.active .menu a,
+header.active .etc-menu a {
+  color: #222;
+}
+header.active h1.logo a {
+  color: #222;
+}
+header.active #trigger span {
+  background-color: #222;
+}
+h2.section-title {
+  position: relative;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+}
+h2.section-title::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 5px;
+  background: linear-gradient(to right, #f53b57, #ff7388);
+}
+p.section-text {
+  margin-bottom: 50px;
+  font-size: 20px;
+  text-align: center;
+}
+.btn-top {
+  position: fixed;
+  right: 10px;
+  bottom: -50px;
+  width: 40px;
+  height: 40px;
+  background: rgba(34, 34, 34, 0.6);
+  border-radius: 5px;
+  color: #fff;
+  line-height: 40px;
+  text-align: center;
+  transition: 0.4s;
+}
+.btn-top.active {
+  bottom: 10px;
+}
+
+/* ━━━━━━━━━━━━━━━━━━━ Header ━━━━━━━━━━━━━━━━━━━ */
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  transition: 0.4s;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 1200px;
+  height: 100%;
+  margin: auto;
+}
+h1.logo {
+  font-weight: bold;
+  letter-spacing: -3px;
+}
+h1.logo a {
+  color: #fff;
+}
+/* trigger */
+#trigger {
+  display: none;
+  position: fixed;
+  right: 30px;
+  top: 20px;
+  width: 28px;
+  height: 20px;
+  z-index: 999;
+}
+#trigger span {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  transition: 0.4s;
+}
+#trigger span:nth-child(1) {
+  top: 0;
+}
+#trigger span:nth-child(2) {
+  top: 9px;
+}
+#trigger span:nth-child(3) {
+  bottom: 0;
+}
+#trigger.active span {
+  background-color: #222;
+}
+#trigger.active span:nth-child(1) {
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+}
+#trigger.active span:nth-child(2) {
+  width: 0;
+  opacity: 0;
+}
+#trigger.active span:nth-child(3) {
+  bottom: 50%;
+  transform: translateY(50%) rotate(-45deg);
+}
+
+/* nav */
+.nav-inner {
+  display: flex;
+}
+.nav-inner ul li {
+  float: left;
+  font-size: 16px;
+}
+.menu a {
+  padding: 0 20px;
+  color: #fff;
+  transition: 0.4s;
+}
+.menu a span {
+  position: relative;
+}
+.menu a span::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background-color: #f53b57;
+  transition: 0.4s;
+}
+.menu a:hover {
+  color: #f53b57;
+}
+.menu a:hover span::before {
+  width: 50%;
+}
+.etc-menu {
+  margin-left: 50px;
+}
+.etc-menu li {
+  position: relative;
+}
+.etc-menu a {
+  padding: 10px;
+  color: #fff;
+  transition: 0.4s;
+}
+.etc-menu a:hover {
+  color: #f53b57;
+}
+.message {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 46px;
+  transform: translateX(-50%);
+  background-color: #000;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  line-height: 30px;
+  pointer-events: none;
+}
+.message::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -10px;
+  transform: translateX(-50%);
+  width: 0px;
+  height: 0px;
+  border-bottom: 10px solid #000;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+}
+.etc-menu li:first-child .message {
+  width: 60px;
+}
+.etc-menu li:last-child .message {
+  width: 80px;
+}
+
+/* ━━━━━━━━━━━━━━━━━━━ Section : welcome ━━━━━━━━━━━━━━━━━━━ */
+#welcome {
+  padding: 0;
+}
+.welcome-inner {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+}
+.welcome-slide {
+  width: 100%;
+  height: 90vh;
+}
+.welcome-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.welcome-heading {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+.welcome-heading h3 {
+  font-size: 24px;
+}
+.welcome-heading h2 {
+  font-size: 70px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: -2px;
+  white-space: nowrap;
+}
+.welcome-heading span {
+  color: #f53b57;
+}
+.welcome-heading a {
+  display: inline-block;
+  position: relative;
+  margin-top: 30px;
+  background-color: #fff;
+  padding: 8px 20px;
+  font-weight: 500;
+  transition: 0.4s;
+}
+.welcome-heading a:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* ━━━━━━━━━━━━━━━━━━━ Section : intro ━━━━━━━━━━━━━━━━━━━ */
+#intro {
+  padding-bottom: 0;
+}
+.intro-inner {
+  width: 1200px;
+  margin: auto;
+  padding-bottom: 60px;
+  border-bottom: 1px solid #eee;
+  overflow: hidden;
+}
+.intro-inner > div {
+  float: left;
+}
+.intro-left {
+  width: 60%;
+  padding-top: 30px;
+  padding-right: 80px;
+}
+.intro-left img {
+  height: 20px;
+  filter: invert(45%) sepia(47%) saturate(6577%) hue-rotate(329deg) brightness(96%) contrast(100%);
+}
+.intro-left h2 {
+  position: relative;
+  padding-bottom: 30px;
+  font-weight: bold;
+}
+.intro-left h2 span {
+  font-size: 18px;
+  font-weight: normal;
+}
+.intro-right {
+  width: 40%;
+}
+.intro-right img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+/* ━━━━━━━━━━━━━━━━━━━ Section : procedure ━━━━━━━━━━━━━━━━━━━ */
+#procedure {
+  padding: 60px 0;
+}
+.procedure-inner {
+  width: 1200px;
+  margin: auto;
+  padding: 0 50px;
+}
+.procedure-contents {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+.procedure-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  border: 1px solid #eee;
+  transition: 0.5s;
+}
+.procedure-icon {
+  width: 80px;
+  height: 80px;
+  text-align: center;
+}
+.procedure-icon i {
+  font-size: 30px;
+  line-height: 80px;
+  transition: 0.5s;
+}
+.procedure-item h3 {
+  padding: 10px 0;
+  font-size: 24px;
+  font-weight: 600;
+}
+.procedure-item p {
+  padding-bottom: 10px;
+  font-size: 15px;
+  line-height: 1.5em;
+  text-align: left;
+}
+.procedure-item:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+.procedure-item:hover i {
+  font-size: 50px;
+}
+
+/* ━━━━━━━━━━━━━━━━━━━ Section : banner ━━━━━━━━━━━━━━━━━━━ */
+#banner {
+  padding: 0;
+}
+.banner-inner {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background: url("../images/banner.jpg") no-repeat right;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.banner-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+}
+.banner-text h2 {
+  padding-bottom: 10px;
+  font-size: 54px;
+  font-weight: bold;
+}
+.banner-text h2 span {
+  color: #f53b57;
+}
+.banner-text p {
+  font-size: 20px;
+}
+
+/* ━━━━━━━━━━━━━━━━━━━ Section : service ━━━━━━━━━━━━━━━━━━━ */
+.service-inner {
+  width: 1200px;
+  margin: auto;
+}
+.service-contents {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+.service-item {
+  border: 1px solid #eee;
+  transition: 0.5s;
+}
+.service-item:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+.img-hover {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+.service-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s;
+}
+.service-item:hover img {
+  transform: scale(1.1);
+}
+.service-desc {
+  padding: 30px;
+  text-align: center;
+}
+.service-desc h3 {
+  padding: 10px 0;
+  font-size: 24px;
+  font-weight: 600;
+}
+.service-desc p {
+  padding-bottom: 10px;
+  font-size: 15px;
+  line-height: 1.5em;
+  text-align: left;
+}
+
+/* ━━━━━━━━━━━━━━━━━━━ Section : amenities ━━━━━━━━━━━━━━━━━━━ */
+#amenities {
+  padding-bottom: 0;
+}
+.amenities-inner {
+  background: #f9f9f9;
+}
+.amenities-contents {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(2, minmax(auto, 280px));
+}
+.amenities-item-photo {
+  overflow: hidden;
+}
+.amenities-item-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s;
+}
+.amenities-item-photo:hover img {
+  transform: scale(1.1);
+}
+.amenities-item-desc {
+  padding: 40px;
+}
+.amenities-item-desc h2 {
+  margin-bottom: 20px;
+  text-align: left;
+  font-size: 28px;
+}
+.amenities-item-desc p {
+  text-align: left;
+  font-size: 16px;
+  line-height: 1.5em;
+}
+.amenities-item-desc h2::after {
+  left: 0;
+  transform: none;
+  background: #ff3f34;
+}
+
+/* ━━━━━━━━━━━━━━━━━━━ Section : faq ━━━━━━━━━━━━━━━━━━━ */
+.faq-inner {
+  width: 1200px;
+  margin: auto;
+}
+.faq-item {
+  border-bottom: 1px solid #eee;
+}
+.faq-item:last-child {
+  border: none;
+}
+.faq-item > div {
+  padding: 10px 30px 10px 50px;
+}
+.faq-question {
+  position: relative;
+  color: #999;
+  cursor: pointer;
+}
+.faq-question::before {
+  content: "\e942";
+  font-family: xeicon;
+  position: absolute;
+  left: 15px;
+  font-size: 24px;
+  text-align: center;
+  transition: 0.4s;
+}
+.faq-answer {
+  display: none;
+}
+.faq-item.active .faq-question {
+  color: #222;
+}
+.faq-item.active .faq-question::before {
+  transform: rotate(-180deg);
+}
+
+/* ━━━━━━━━━━━━━━━━━━━ Section : reservation ━━━━━━━━━━━━━━━━━━━ */
+.reservation-inner {
+  width: 1200px;
+  margin: auto;
+  overflow: hidden;
+}
+.reservation-contents {
+  display: flex;
+  align-items: center;
+}
+.location-map {
+  width: 70%;
+  height: 500px;
+}
+.location-map iframe {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: none;
+}
+.reservation-form {
+  width: 30%;
+  padding-left: 40px;
+}
+.reservation-form h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+.reservation-form h2 span {
+  position: relative;
+}
+.reservation-form h2 span::before,
+.reservation-form h2 span::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 85px;
+  height: 3px;
+  background-color: #ff3f34;
+}
+.reservation-form h2 span::before {
+  left: calc(100% + 10px);
+}
+.reservation-form h2 span::after {
+  right: calc(100% + 10px);
+}
+.reservation-form label {
+  position: relative;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+.reservation-form label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 3px;
+  background-color: #ff3f34;
+  transform: skewX(-45deg);
+  z-index: -1;
+}
+.reservation-form input[name="name"],
+.reservation-form input[name="tel"],
+.reservation-form input[name="date"] {
+  display: block;
+  width: 100%;
+  margin: 5px 0 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+.reservation-form input[name="name"]:hover,
+.reservation-form input[name="tel"]:hover,
+.reservation-form input[name="date"]:hover {
+  border: 1px solid #ffaca8;
+  box-shadow: 0 0 5px #ffdedc;
+}
+.reservation-form input[name="name"]:focus,
+.reservation-form input[name="tel"]:focus,
+.reservation-form input[name="date"]:focus {
+  background-color: #f9f9f9;
+}
+.reservation-form button {
+  position: relative;
+  margin-top: 25px;
+  padding: 12px 20px;
+  border: 1px solid #000;
+  background-color: transparent;
+  transition: 0.4s;
+  outline: none;
+  cursor: pointer;
+}
+.reservation-form button::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 0;
+  height: 100%;
+  background-color: #222;
+  transition: 0.4s;
+  z-index: -1;
+}
+.reservation-form button:hover {
+  color: #fff;
+}
+.reservation-form button:hover::after {
+  width: 100%;
+}
+
+
+/* ━━━━━━━━━━━━━━━━━━━ Footer ━━━━━━━━━━━━━━━━━━━ */
+footer {
+  padding: 20px 0;
+  background-color: #222;
+}
+.footer-inner {
+  display: flex;
+  width: 1200px;
+  margin: auto;
+}
+.footer-inner span {
+  font-size: 14px;
+  color: #666;
+}
+.footer-inner em {
+  font-style: normal;
+  font-size: 12px;
+  color: #333;
+}
+.footer-inner h1.logo {
+  font-size: 24px;
+  color: #666;
+}
+.copyright {
+  width: 100%;
+  margin-left: 40px;
+  overflow: hidden;
+}
+.policy-sns {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #333;
+  overflow: hidden;
+}
+.policy {
+  float: left;
+}
+.sns {
+  float: right;
+  overflow: hidden;
+}
+.sns li {
+  float: left;
+}
+.sns a {
+  margin-left: 5px;
+  padding: 3px;
+  background-color: #666;
+  border-radius: 5px;
+  color: #fff;
+  transition: 0.4s;
+}
+.sns li:first-child a:hover {
+  background-color: #1877F2;
+}
+.sns li:last-child a:last-child:hover {
+  background-color: #E4405F;
+}
+.address {
+  padding-top: 10px;
+}

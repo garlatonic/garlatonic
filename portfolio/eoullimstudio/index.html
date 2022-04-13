@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./images/logo-favicon.png">
+  <title>Eoullim Studio</title>
+  <!-- Font Awesome Kit -->
+  <script src="https://kit.fontawesome.com/69d15ff288.js" crossorigin="anonymous"></script>
+  <!-- XEICON -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+  <!-- jQuery CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- Slick JS -->
+  <script src="./js/slick/slick.min.js"></script>
+  <link rel="stylesheet" href="./js/slick/slick.css">
+  <link rel="stylesheet" href="./js/slick/slick-theme.css">
+  <!-- Smooth Scroll -->
+  <script src="./js/jquery.scrollTo.min.js"></script>
+  <!-- AOS -->
+  <script src="./js/aos/aos.js"></script>
+  <link rel="stylesheet" href="./js/aos/aos.css">
+  <!-- TypeIt -->
+  <script src="https://unpkg.com/typeit@8.4.0/dist/index.umd.js"></script>
+  <!-- Custom JS & CSS -->
+  <script src="./js/custom.js"></script>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <div class="header-inner">
+        <h1 class="logo">
+          <a href="#">EOULLIM</a>
+        </h1>
+        <div class="overlay-top"></div>
+        <div class="overlay-bottom"></div>
+        <div id="trigger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <nav>
+          <div class="nav-inner">
+            <ul class="menu">
+              <li><a href="#intro"><span>Intro</span></a></li>
+              <li><a href="#service"><span>Service</span></a></li>
+              <li><a href="#amenities"><span>Amenities</span></a></li>
+              <li><a href="#faq"><span>FAQ</span></a></li>
+              <li><a href="#reservation"><span>Reservation</span></a></li>
+            </ul>
+            <ul class="etc-menu">
+              <li>
+                <a href="#none"><i class="fa-solid fa-user"></i></a>
+                <div class="message">로그인</div>
+              </li>
+              <li><a href="#none">
+                <i class="fa-solid fa-right-to-bracket"></i></a>
+                <div class="message">회원가입</div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- Section : welcome -->
+    <section id="welcome">
+      <div class="welcome-inner">
+        <div class="welcome-slider">
+          <div class="welcome-slide">
+            <img src="./images/welcome-01.jpg" alt="메인슬라이드1">
+          </div>
+          <div class="welcome-slide">
+            <img src="./images/welcome-02.jpg" alt="메인슬라이드2">
+          </div>
+          <div class="welcome-slide">
+            <img src="./images/welcome-03.jpg" alt="메인슬라이드3">
+          </div>
+        </div>
+        <div class="welcome-heading">
+          <h3 id="typing">Personalized Consulting & Personalized Styling</h3>
+          <h2>eoullim <span>studio</span></h2>
+          <a href="#reservation" class="btn-reserved">예약하기</a>
+        </div>
+      </div>
+    </section>
+    <!-- Section : intro -->
+    <section id="intro">
+      <div class="intro-inner">
+        <div class="intro-left" data-aos="fade-right">
+          <img src="./images/quotation-mark.svg" alt="따옴표">
+          <h2>어울리다 <span>: 두 가지 이상의 것이 서로 조화되어 자연스럽게 보이다.</span>
+          </h2>
+          <p>
+            모든 사람은 자신만의 색을 가지고 있습니다. 어울림 스튜디오는 퍼스널컬러 진단 전문 스튜디오로서 매장을 찾아주시는 고객 개개인의 라이프 스타일에 본인의 색과 멋이 잘 어울릴 수 있도록 다양한 솔루션과 서비스를 제공합니다.
+          </p>
+        </div>
+        <div class="intro-right" data-aos="fade-left">
+          <img src="./images/intro.jpg" alt="어울림스튜디오">
+        </div>
+      </div>
+    </section>
+    <!-- Section : procedure -->
+    <section id="procedure">
+      <div class="procedure-inner">
+        <div class="procedure-contents">
+          <div class="procedure-item card-item" data-aos="fade-up">
+            <div class="procedure-icon">
+              <i class="fa-solid fa-palette"></i>
+            </div>
+            <div class="procedure-desc">
+              <h3 class="card-title">Personal Color</h3>
+              <p class="card-text">
+                퍼스널컬러는 개인이 가진 고유의 신체색으로, 보통 피부, 머리카락, 눈동자 색을 말합니다. 퍼스널 컬러에 적합한 색을 활용시에 보다 생기있고 활기차 보이는 이미지를 연출 할 수 있습니다.
+              </p>
+            </div>
+          </div>
+          <div class="procedure-item card-item" data-aos="fade-up"  data-aos-delay="200">
+            <div class="procedure-icon">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="procedure-desc">
+              <h3 class="card-title">Diagnostic Procedure</h3>
+              <p class="card-text">
+                설문지 작성 등을 통해 특정 색상에 대한 선호도를 조사, 분광 측색기를 이용해 분광 측색기를 이용하여 적색과 황색도를 분석합니다. 이후 다양한 종류의 퍼스널컬러 진단천을 사용하여 진단자의 피부색이 사계절 이론 중 어느 계절에 속하는지 구분합니다.
+              </p>
+            </div>
+          </div>
+          <div class="procedure-item card-item" data-aos="fade-up"  data-aos-delay="400">
+            <div class="procedure-icon">
+              <i class="fa-solid fa-list-check"></i>
+            </div>
+            <div class="procedure-desc">
+              <h3 class="card-title">Select Personal Color</h3>
+              <p class="card-text">
+                앞서 한 검사들을 토대로 사계절 유형의 색채중에서 진단자에게 가장 어울리는 베스트 색상들을 마지막으로 선별합니다.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section : banner -->
+    <section id="banner">
+      <div class="banner-inner">
+        <div class="banner-text">
+          <h2>Find Your <span>Color</span></h2>
+          <p>
+            전문 컨설턴트가 당신에게 가장 잘 어울리는 <br>
+            퍼스널 컬러 디자인 서비스를 제공합니다.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Section : service -->
+    <section id="service">
+      <div class="service-inner">
+        <h2 class="section-title">Service</h2>
+        <p class="section-text">
+          매장에 방문하시는 고객님들을 위해 다양한 서비스를 제공합니다.
+        </p>
+        <div class="service-contents">
+          <div class="service-item" data-aos="fade-up">
+            <div class="img-hover">
+              <img src="./images/service-1.jpg" alt="서비스1">
+            </div>
+            <div class="service-desc">
+              <h3>한눈에 보는 퍼스널컬러</h3>
+              <p>
+                본인에게 맞는 컬러 정보를 컬러칩을 사용하여 초보 고객님들도 알기 쉽게 설명해드립니다. 퍼스널 컬러 기반 패션디렉팅은 물론 메이크업 제품 및 스킬 추천 헤어 컬러 및 악세사리 추천까지 정리 되어 있는 컬러칩을 무료로 제공해드립니다.
+              </p>
+            </div>
+          </div>
+          <div class="service-item" data-aos="fade-up"  data-aos-delay="200">
+            <div class="img-hover">
+              <img src="./images/service-2.jpg" alt="서비스2">
+            </div>
+            <div class="service-desc">
+              <h3>전문가 일대일 매칭</h3>
+              <p>
+                퍼스널컬러 전문 자격증을 보유한 전문가를 1:1 매칭해드립니다. 초기상담부터 지속적인 애프터서비스까지 맞춤형 솔루션을 제공받고 나만의 색을 찾아보세요.
+              </p>
+            </div>
+          </div>
+          <div class="service-item" data-aos="fade-up"  data-aos-delay="400">
+            <div class="img-hover">
+              <img src="./images/service-3.jpg" alt="서비스3">
+            </div>
+            <div class="service-desc">
+              <h3>편리한 상담예약</h3>
+              <p>
+                장소와 기기의 제약 없이 온/오프라인 예약이 모두 가능합니다. 인근 매장을 검색하고 원하는 곳으로 예약해보세요. 회원 가입은 쉽고 간단합니다. 무료 회원 가입 후 로그인하시면 즐겨찾는 매장과 예약현황을 확인 가능합니다.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section : Amenities -->
+    <section id="amenities">
+      <div class="amenities-inner">
+        <div class="amenities-contents">
+          <div class="amenities-item-photo">
+            <img src="./images/amenities-1.jpg" alt="파우더룸">
+          </div>
+          <div class="amenities-item-desc">
+            <h2 class="section-title">파우더룸</h2>
+            <p class="section-text">
+              나를 다양하게 표현해볼 수 있는 공간으로, 상담 기간 동안 고객분들 누구나 자유롭게 이용하실 수 있습니다. 메이크업 도구와 헤어기기 등이 준비되어 있습니다.
+            </p>
+          </div>
+          <div class="amenities-item-photo">
+            <img src="./images/amenities-2.jpg" alt="상담공간">
+          </div>
+          <div class="amenities-item-desc">
+            <h2 class="section-title">프라이빗 개별 상담공간</h2>
+            <p class="section-text">
+              전문가와 1:1 단독 컬러 전문 프로그램을 진행하는 공간 입니다. 지정된 개별 상담실에서 프라이빗하게 상담받으실 수 있습니다.
+            </p>
+          </div>
+          <div class="amenities-item-photo">
+            <img src="./images/amenities-3.jpg" alt="대기실">
+          </div>
+          <div class="amenities-item-desc">
+            <h2 class="section-title">대기실</h2>
+            <p class="section-text">
+              상담을 기다리시는데 불편함을 최소화하기 위한 각종 물품들이 구비되어 있어 편하게 기다릴 수 있습니다. 조용한 음악, 볼거리, 음료와 간식 등이 준비되어 있습니다.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section : faq -->
+    <section id="faq">
+      <div class="faq-inner">
+        <h2 class="section-title">FAQ</h2>
+        <p class="section-text">
+          매장이용에 관련하여 어떤 점이 궁금하신가요?
+        </p>
+        <div class="faq-accordion" data-aos="fade-up">
+          <div class="faq-item active">
+            <div class="faq-question">
+              상담을 받고싶은데 홈페이지 회원가입이 필수인가요?
+            </div>
+            <div class="faq-answer">
+              아니오, 회원가입은 즐겨찾는 매장과 예약현황을 간편히 확인하기 위함으로 고객분들의 선택입니다. <br>
+              어울림 스튜디오 회원가입은 만 14세 이상 누구나 가입하실 수 있습니다.
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              상담예약 시 주민등록번호가 포함되나요?
+            </div>
+            <div class="faq-answer">
+              아니오, 상담예약은 상담을 원하시는 성함, 연락처 등 고객님들의 최소한의 정보만으로 완료됩니다.
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              개인정보 관리를 어떻게 하시나요?
+            </div>
+            <div class="faq-answer">
+              어울림 스튜디오는 서비스 제공을 위해 회원의 개인정보를 최소화 하여 수집하며, 수집된 정보는 ＇개인정보 취급방침＇에 따라 엄격히 관리됩니다. <br>
+              어울림 스튜디오는 고객님의 개인정보를 소중하게 생각하며 서비스를 이용하시는 고객님의 개인정보 보호를 위해 관련 법령에서 규정하고 있는 개인정보보호 규정을 철저히 준수합니다. 개인정보보호와 관련한 자세한 내용은 '개인정보 취급방침'을 참고해주시기 바랍니다.
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              회원정보를 변경하고 싶은데 어떻게 하나요?
+            </div>
+            <div class="faq-answer">
+              어울림 스튜디오 회원정보를 변경하기 위해서 로그인 후 [회원정보]에서 회원정보를 조회하거나 변경하실 수 있습니다. <br>
+              회원정보 변경 방법은 아래와 같습니다. (단, 아이디는 수정하실 수 없습니다.) <br>
+                <br>
+              ① [회원정보] 페이지 > 현재 사용중인 비밀번호 입력 <br>
+              ② [정보수정] 버튼을 클릭합니다.
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              상담예약은 어떻게 하나요?
+            </div>
+            <div class="faq-answer">
+              방문하고자 하는 매장의 유선전화에 직접 전화하시거나 사이트 내 [매장찾기] 페이지에서 가능합니다.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section : reservation -->
+    <section id="reservation">
+      <div class="reservation-inner">
+        <h2 class="section-title">Location</h2>
+        <p class="section-text">
+          어울림 스튜디오는 서울 서대문구 연희동에 위치해 있으며, <br>
+          예약하시는 고객분들에 한해 금액할인이 이루어집니다. <br>
+        </p>
+        <div class="reservation-contents">
+          <div class="location-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.3833312010497!2d126.92778511563371!3d37.569590231710364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c98f3786577a9%3A0xd12cb3c15be1a94f!2z7ISc7Jq47Yq567OE7IucIOyEnOuMgOusuOq1rCDsl7Dtnazrj5kgMTIzLTE0!5e0!3m2!1sko!2skr!4v1649828527081!5m2!1sko!2skr" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="reservation-form">
+            <h2><span>Reservation</span></h2>
+            <form name="reservation" method="post">
+              <ul>
+                <li>
+                  <label for="name">Name</label>
+                  <input type="text" name="name" id="name" placeholder="예약자 성함">
+                </li>
+                <li>
+                  <label for="tel">Tel</label>
+                  <input type="tel" name="tel" id="tel" pattern="\d{3}[\-]\d{4}[\-]\d{4}" placeholder="예약자 전화번호">
+                </li>
+                <li>
+                  <label for="tel">Reservation Date</label>
+                  <input type="date" id="datepicker" name="date">
+                </li>
+              </ul>
+              <button type="submit">예약하기</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+      <div class="footer-inner">
+        <h1 class="logo">EOULLIM</h1>
+        <div class="copyright">
+          <div class="policy-sns">
+            <ul class="policy">
+              <li>
+                <span>개인정보취급방침</span> <em>|</em> 
+                <span>이용약관</span>
+              </li>
+              <li><span>Copyright EOULLIM STUDIO. All right reserved.</span></li>
+            </ul>
+            <ul class="sns">
+              <li>
+                <a class="xi-facebook" href="#none"><i></i></a>
+              </li>
+              <li>
+                <a class="xi-instagram" href="#none"><i ></i></a>
+              </li>
+            </ul>
+          </div>
+          <ul class="address">
+            <li>
+              <span>(주)어울림 스튜디오</span> <em>|</em> 
+              <span>대표자 : 박상아</span> <em>|</em> 
+              <span>사업자번호 : 123-5-67890</span> <em>|</em> 
+              <span>사업자 정보 확인</span>
+            </li>
+            <li>
+              <span>주소 : 서울시 서대문구 연희동 123-14 한성빌딩 2층</span> <em>|</em> 
+              <span>이메일: info@eoullimstudio.com</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <!-- GO TOP -->
+  <a class="btn-top" href="#welcome"><i class="xi-angle-up-thin"></i></a>
+</body>
+</html>
