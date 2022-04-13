@@ -13,8 +13,8 @@ $(function(){
   $('.toggle').click(function(){ // 네비 펼치기
     $('body, .toggle, .overlay, nav').toggleClass('active');
   })
-  $('.overlay, nav a').click(function(){  // 네비 닫기
-    $('body, .toggle, .overlay, nav').removeClass('active');
+  $('nav a').click(function(){  // 네비 닫기
+    $('.toggle, .overlay, nav').removeClass('active');
   })
 
   /* Smooth Sliding */
