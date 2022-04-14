@@ -913,13 +913,13 @@ hr.bar {
 
 /* #################### SubPage : Project Detail #################### */
 .hiring-main.project-main1 {
-  background: url(./images/project-modal-main-01.jpg) no-repeat center;
+  background: url(../images/project-modal-main-01.jpg) no-repeat center;
 }
 .hiring-main.project-main2 {
-  background: url(./images/project-modal-main-02.jpg) no-repeat center;
+  background: url(../images/project-modal-main-02.jpg) no-repeat center;
 }
 .hiring-main.project-main3 {
-  background: url(./images/project-modal-main-03.jpg) no-repeat center;
+  background: url(../images/project-modal-main-03.jpg) no-repeat center;
 }
 .hiring-main.project-main1,
 .hiring-main.project-main2,
