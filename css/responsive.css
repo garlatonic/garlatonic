@@ -40,6 +40,10 @@
   .portfolio-inner {
     width: 100%;
   }
+  .portfolio-tab img {
+    height: auto;
+    min-height: 500px;
+  }
 
   /* ━━━━━━━━━━━━━━━━━━━━━━━━ Footer ━━━━━━━━━━━━━━━━━━━━━━━━ */
   footer {
@@ -85,9 +89,16 @@
   /* ━━━━━━━━━━━━━━━━━━━━━━━━ Section : Skills ━━━━━━━━━━━━━━━━━━━━━━━━ */
   .skills-items {
     display: grid;
-    grid-template-columns: repeat(2, minmax(33.3%, auto));
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3, minmax(230px, auto));
     gap: 20px;
+
+  }
+
+  /* ━━━━━━━━━━━━━━━━━━━━━━━━ Section : Portfolio ━━━━━━━━━━━━━━━━━━━━━━━━ */
+  .portfolio-tab img {
+    height: auto;
+    min-height: 400px;
   }
 }
 
@@ -180,6 +191,10 @@
   .portfolio-tab p {
     padding: 0;
     text-align: left;
+  }
+  .portfolio-tab img {
+    height: auto;
+    min-height: 200px;
   }
   .btn-tabs {
     display: flex;

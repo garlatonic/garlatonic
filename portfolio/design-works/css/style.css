@@ -488,7 +488,7 @@ input[id="tab3"]:checked ~ .tabs {
 }
 .history-slider .slick-dots li button:before {
   color: #fff;
-  font-size: 40px;
+  font-size: 10px;
 }
 .history-info .slick-dots li {
   margin: 0 !important;

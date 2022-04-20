@@ -11,10 +11,11 @@ $(function(){
 
   /* Navgation Menu */
   $('.toggle').click(function(){ // 네비 펼치기
-    $('body, .toggle, .overlay, nav').toggleClass('active');
+    $('.toggle, .overlay, nav').toggleClass('active');
+    $('body').addClass('active'); // 네비 펼쳤을 때 body에 active 클래스를 주어 스크롤이 생기지않도록 함
   })
-  $('nav a').click(function(){  // 네비 닫기
-    $('.toggle, .overlay, nav').removeClass('active');
+  $('nav a').click(function(){
+    $('body, .toggle, .overlay, nav').removeClass('active');
   })
 
   /* Smooth Sliding */
