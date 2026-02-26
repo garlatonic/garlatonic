@@ -31,8 +31,8 @@
 
 ## 📊 GitHub Stats
 
-<img height="155" src="https://github-readme-stats-garlatonic.vercel.app/api?username=garlatonic&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" />
-<img height="155" src="https://github-readme-stats-garlatonic.vercel.app/api/top-langs/?username=garlatonic&layout=donut&theme=tokyonight&hide_border=true" />
+<img height="155" src="https://github-readme-stats-garlatonic.vercel.app/api?username=garlatonic&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&cache_seconds=1800" />
+<img height="155" src="https://github-readme-stats-garlatonic.vercel.app/api/top-langs/?username=garlatonic&layout=donut&theme=tokyonight&hide_border=true&cache_seconds=1800" />
 
 <br/>
 
