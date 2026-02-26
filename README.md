@@ -1,49 +1,75 @@
 <div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=transparent&height=100&section=header&text=garlatonic&fontSize=70&fontColor=FFFFFF&fontAlign=50&fontAlignY=50&animation=twinkling&desc=FE%20Developer&descSize=20&descAlign=62&descAlignY=92" />
+</div>
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1000&color=FF79C6&center=true&vCenter=true&width=500&lines=Hello!+I'm+garlatonic+👋;TypeScript+%2B+Next.js+lover+💙;Always+learning%2C+always+building+🚀)](https://git.io/typing-svg)
+---
 
-<br/>
+<img align="right" height="170" src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdnNpa2tpcnR4ZHkza3IydzFkbXlnOHBsMHd5aXlyeGI4emE5OTRzZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/GJMpsAj6xEhNJvCw2j/giphy.gif" />
 
-🖥️ Next.js App Router 기반 프론트엔드 개발자<br />
-🎨 UI/UX와 사용자 경험을 중요하게 생각해요<br />
-📬 garlatonic@kakao.com<br />
+<div align="left">
+
+```js
+const sanga = {
+  role: "Frontend Developer",
+  focus: ["UX", "DX", "Clean Code", "Accessibility"],
+  currently: "Programmers DevCourse",
+};
+```
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/%EC%83%81%EC%95%84-%EB%B0%95-495630387/)
+[![Email](https://img.shields.io/badge/sangapark34@naver.com-03C75A?style=flat-square&logo=naver&logoColor=white)](mailto:sangapark34@naver.com)
+
+</div>
+
+<br clear="both"/>
+
+---
+
+### Tech Stack
+
+<div align="left">
+  <img src="https://img.shields.io/badge/Next.js-000000?logo=nextdotjs&logoColor=white&style=for-the-badge" height="36" />
+  <img src="https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black&style=for-the-badge" height="36" />
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white&style=for-the-badge" height="36" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black&style=for-the-badge" height="36" />
+  <img src="https://img.shields.io/badge/Tailwind CSS-06B6D4?logo=tailwindcss&logoColor=white&style=for-the-badge" height="36" />
+  <img src="https://img.shields.io/badge/Zustand-433D2B?logo=react&logoColor=white&style=for-the-badge" height="36" />
+  <img src="https://img.shields.io/badge/Zod-3E67B1?logo=zod&logoColor=white&style=for-the-badge" height="36" />
+  <img src="https://img.shields.io/badge/ESLint-4B32C3?logo=eslint&logoColor=white&style=for-the-badge" height="36" />
+</div>
+
+### Now Learning
+
+<div align="left">
+  <img src="https://img.shields.io/badge/TanStack Query-FF4154?logo=reactquery&logoColor=white&style=for-the-badge" height="36" />
+</div>
+
+### Collaboration
+
+<div align="left">
+  <img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white&style=for-the-badge" height="36" />
+  <img src="https://img.shields.io/badge/Figma-F24E1E?logo=figma&logoColor=white&style=for-the-badge" height="36" />
+  <img src="https://img.shields.io/badge/Notion-000000?logo=notion&logoColor=white&style=for-the-badge" height="36" />
+  <img src="https://img.shields.io/badge/Slack-4A154B?logo=slack&logoColor=white&style=for-the-badge" height="36" />
+</div>
 
 <br/>
 
 ---
 
-## 🛠 Tech Stack
+### My Stats
 
-[![skillicons](https://skillicons.dev/icons?i=nextjs,react,ts,js,tailwind,vite,vercel&perline=8)](https://skillicons.dev)
+<div align="center">
+  <img src="https://github-readme-stats-garlatonic.vercel.app/api?username=garlatonic&show_icons=true&count_private=true&theme=dark&hide_border=true&include_all_commits=true&hide_rank=true" height="155" />
+  <img src="https://github-readme-stats-garlatonic.vercel.app/api/top-langs?username=garlatonic&layout=donut&theme=dark&hide_border=true" height="155" />
+  <img src="https://streak-stats.demolab.com?user=garlatonic&theme=dark&hide_border=true&locale=ko" height="155" />
 
-[![skillicons](https://skillicons.dev/icons?i=git,github,figma,notion&perline=8)](https://skillicons.dev)
-
-**and...**
-
-![TanStack Query](https://img.shields.io/badge/TanStack_Query-FF4154?style=flat-square&logo=reactquery&logoColor=white)
-![Zustand](https://img.shields.io/badge/Zustand-433D2B?style=flat-square&logo=react&logoColor=white)
-![React Hook Form](https://img.shields.io/badge/React_Hook_Form-EC5990?style=flat-square&logo=reacthookform&logoColor=white)
-![Zod](https://img.shields.io/badge/Zod-3E67B1?style=flat-square&logo=zod&logoColor=white)
+</div>
 
 <br/>
-
----
-
-## 📊 GitHub Stats
-
-<img height="155" src="https://github-readme-stats-garlatonic.vercel.app/api?username=garlatonic&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&cache_seconds=1800" />
-<img height="155" src="https://github-readme-stats-garlatonic.vercel.app/api/top-langs/?username=garlatonic&layout=donut&theme=tokyonight&hide_border=true&cache_seconds=1800" />
-
-<br/>
-
----
-
-## 🕹 Pac-Man eats my contributions!
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/garlatonic/garlatonic/output/pacman-contribution-graph.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/garlatonic/garlatonic/output/pacman-contribution-graph-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/garlatonic/garlatonic/output/pacman-contribution-graph.svg" />
   <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/garlatonic/garlatonic/output/pacman-contribution-graph.svg" />
 </picture>
-
-</div>
