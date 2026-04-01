@@ -36,11 +36,13 @@ const sanga = {
   <img src="https://img.shields.io/badge/Zustand-433D2B?logo=react&logoColor=white&style=for-the-badge" height="36" />
   <img src="https://img.shields.io/badge/Zod-3E67B1?logo=zod&logoColor=white&style=for-the-badge" height="36" />
   <img src="https://img.shields.io/badge/ESLint-4B32C3?logo=eslint&logoColor=white&style=for-the-badge" height="36" />
+  <img src="https://img.shields.io/badge/TanStack Query-FF4154?logo=reactquery&logoColor=white&style=for-the-badge" height="36" />
 </div>
 
 ### Now Learning
 
 <div align="left">
+  <img src="https://img.shields.io/badge/Zod-3E67B1?logo=zod&logoColor=white&style=for-the-badge" height="36" />
   <img src="https://img.shields.io/badge/TanStack Query-FF4154?logo=reactquery&logoColor=white&style=for-the-badge" height="36" />
 </div>
 
