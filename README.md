@@ -1,5 +1,18 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=transparent&height=100&section=header&text=garlatonic&fontSize=70&fontColor=FFFFFF&fontAlign=50&fontAlignY=50&animation=twinkling&desc=FE%20Developer&descSize=20&descAlign=62&descAlignY=92" />
+<picture>
+  <source
+    media="(prefers-color-scheme: dark)"
+    srcset="https://capsule-render.vercel.app/api?type=transparent&height=100&section=header&text=garlatonic&fontSize=70&fontColor=FFFFFF&fontAlign=50&fontAlignY=50&animation=twinkling&desc=FE%20Developer&descSize=20&descAlign=62&descAlignY=92"
+  />
+  <source
+    media="(prefers-color-scheme: light)"
+    srcset="https://capsule-render.vercel.app/api?type=transparent&height=100&section=header&text=garlatonic&fontSize=70&fontColor=111111&fontAlign=50&fontAlignY=50&animation=twinkling&desc=FE%20Developer&descSize=20&descAlign=62&descAlignY=92"
+  />
+  <img
+    alt="garlatonic FE Developer"
+    src="https://capsule-render.vercel.app/api?type=transparent&height=100&section=header&text=garlatonic&fontSize=70&fontColor=111111&fontAlign=50&fontAlignY=50&animation=twinkling&desc=FE%20Developer&descSize=20&descAlign=62&descAlignY=92"
+  />
+</picture>
 </div>
 
 ---
