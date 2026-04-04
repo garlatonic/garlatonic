@@ -75,9 +75,57 @@ const sanga = {
 ### My Stats
 
 <div align="center">
-  <img src="https://github-readme-stats-garlatonic.vercel.app/api?username=garlatonic&show_icons=true&count_private=true&theme=dark&hide_border=true&include_all_commits=true&hide_rank=true" height="155" />
-  <img src="https://github-readme-stats-garlatonic.vercel.app/api/top-langs?username=garlatonic&layout=donut&theme=dark&hide_border=true" height="155" />
-  <img src="https://streak-stats.demolab.com?user=garlatonic&theme=dark&hide_border=true&locale=ko" height="155" />
+
+  <!-- GitHub Stats -->
+  <picture>
+    <source
+      media="(prefers-color-scheme: dark)"
+      srcset="https://github-readme-stats-garlatonic.vercel.app/api?username=garlatonic&show_icons=true&count_private=true&theme=dark&hide_border=true&include_all_commits=true&hide_rank=true"
+    />
+    <source
+      media="(prefers-color-scheme: light)"
+      srcset="https://github-readme-stats-garlatonic.vercel.app/api?username=garlatonic&show_icons=true&count_private=true&theme=default&hide_border=true&include_all_commits=true&hide_rank=true"
+    />
+    <img
+      alt="garlatonic's GitHub stats"
+      src="https://github-readme-stats-garlatonic.vercel.app/api?username=garlatonic&show_icons=true&count_private=true&theme=default&hide_border=true&include_all_commits=true&hide_rank=true"
+      height="155"
+    />
+  </picture>
+
+  <!-- Top Languages -->
+  <picture>
+    <source
+      media="(prefers-color-scheme: dark)"
+      srcset="https://github-readme-stats-garlatonic.vercel.app/api/top-langs?username=garlatonic&layout=donut&theme=dark&hide_border=true"
+    />
+    <source
+      media="(prefers-color-scheme: light)"
+      srcset="https://github-readme-stats-garlatonic.vercel.app/api/top-langs?username=garlatonic&layout=donut&theme=default&hide_border=true"
+    />
+    <img
+      alt="Most used languages"
+      src="https://github-readme-stats-garlatonic.vercel.app/api/top-langs?username=garlatonic&layout=donut&theme=default&hide_border=true"
+      height="155"
+    />
+  </picture>
+
+  <!-- Streak -->
+  <picture>
+    <source
+      media="(prefers-color-scheme: dark)"
+      srcset="https://streak-stats.demolab.com?user=garlatonic&theme=dark&hide_border=true&locale=ko"
+    />
+    <source
+      media="(prefers-color-scheme: light)"
+      srcset="https://streak-stats.demolab.com?user=garlatonic&theme=default&hide_border=true&locale=ko"
+    />
+    <img
+      alt="GitHub streak"
+      src="https://streak-stats.demolab.com?user=garlatonic&theme=default&hide_border=true&locale=ko"
+      height="155"
+    />
+  </picture>
 
 </div>
 
