@@ -1,138 +1,37 @@
 <div align="center">
-<picture>
-  <source
-    media="(prefers-color-scheme: dark)"
-    srcset="https://capsule-render.vercel.app/api?type=transparent&height=100&section=header&text=garlatonic&fontSize=70&fontColor=FFFFFF&fontAlign=50&fontAlignY=50&animation=twinkling&desc=FE%20Developer&descSize=20&descAlign=62&descAlignY=92"
-  />
-  <source
-    media="(prefers-color-scheme: light)"
-    srcset="https://capsule-render.vercel.app/api?type=transparent&height=100&section=header&text=garlatonic&fontSize=70&fontColor=111111&fontAlign=50&fontAlignY=50&animation=twinkling&desc=FE%20Developer&descSize=20&descAlign=62&descAlignY=92"
-  />
-  <img
-    alt="garlatonic FE Developer"
-    src="https://capsule-render.vercel.app/api?type=transparent&height=100&section=header&text=garlatonic&fontSize=70&fontColor=111111&fontAlign=50&fontAlignY=50&animation=twinkling&desc=FE%20Developer&descSize=20&descAlign=62&descAlignY=92"
-  />
-</picture>
+
+<img width="1100" alt="보라색 네온 분위기의 픽셀아트 배너. 노트북으로 작업하는 프론트엔드 개발자와 코드, 별, 유령 캐릭터가 함께 표현된 GitHub 프로필 배너" src="https://github.com/user-attachments/assets/c2c28137-8453-4f78-82ec-ea56531e2651" style="max-width: 100%" />
 </div>
 
----
+## ⚜️ About me
+<p>
+사용자의 문제를 지나치지 않고, 더 나은 경험을 위해 질문하고,<br />
+코드로 답을 만들어가는 프론트엔드 개발자입니다.
+</p>
+<p>
+  웹 퍼블리셔로 시작해, 이제는 UI 너머의 사용자 경험까지 고민합니다.
+</p>
 
-<img align="right" height="170" src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdnNpa2tpcnR4ZHkza3IydzFkbXlnOHBsMHd5aXlyeGI4emE5OTRzZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/GJMpsAj6xEhNJvCw2j/giphy.gif" />
+- **Education:** 조선대학교 기계공학과 · 정보통신공학과 졸업
+- **Experience:** 프로그래머스 데브코스 - 프론트엔드 과정 수료
+- **Career:** 2022.05 – 2025.04 · 케이에이치이노베이션 기술개발팀 (웹 퍼블리싱 · 프론트엔드 개발)
+- 
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/garlatonic/)
+[![Email](https://img.shields.io/badge/Email-03C75A?style=flat-square&logo=naver&logoColor=white)](mailto:sangapark34@naver.com)
 
-<div align="left">
+## 🤺 Skills 
 
-```js
-const sanga = {
-  role: "Frontend Developer",
-  focus: ["UX", "DX", "Clean Code", "Accessibility"],
-  currently: "Programmers DevCourse",
-};
-```
+[![My Skills](https://skillicons.dev/icons?i=nextjs,react,ts,js,jquery,html,css)](https://skillicons.dev)
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/%EC%83%81%EC%95%84-%EB%B0%95-495630387/)
-[![Email](https://img.shields.io/badge/sangapark34@naver.com-03C75A?style=flat-square&logo=naver&logoColor=white)](mailto:sangapark34@naver.com)
+<p>
+and... 
+<img src="https://img.shields.io/badge/TanStack_Query-FF4154?style=flat-square&logo=reactquery&logoColor=white" />
+<img src="https://img.shields.io/badge/Zustand-433D2B?style=flat-square" />
+<img src="https://img.shields.io/badge/Zod-3E67B1?style=flat-square&logo=zod&logoColor=white" />
+</p>
 
-</div>
+## 📚 Featured
 
-<br clear="both"/>
-
----
-
-### Tech Stack
-
-<div align="left">
-  <img src="https://img.shields.io/badge/Next.js-000000?logo=nextdotjs&logoColor=white&style=for-the-badge" height="36" />
-  <img src="https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black&style=for-the-badge" height="36" />
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white&style=for-the-badge" height="36" />
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black&style=for-the-badge" height="36" />
-  <img src="https://img.shields.io/badge/Tailwind CSS-06B6D4?logo=tailwindcss&logoColor=white&style=for-the-badge" height="36" />
-  <img src="https://img.shields.io/badge/Zustand-433D2B?logo=react&logoColor=white&style=for-the-badge" height="36" />
-  <img src="https://img.shields.io/badge/Zod-3E67B1?logo=zod&logoColor=white&style=for-the-badge" height="36" />
-  <img src="https://img.shields.io/badge/ESLint-4B32C3?logo=eslint&logoColor=white&style=for-the-badge" height="36" />
-  <img src="https://img.shields.io/badge/TanStack Query-FF4154?logo=reactquery&logoColor=white&style=for-the-badge" height="36" />
-</div>
-
-### Now Learning
-
-<div align="left">
-  <img src="https://img.shields.io/badge/Zod-3E67B1?logo=zod&logoColor=white&style=for-the-badge" height="36" />
-  <img src="https://img.shields.io/badge/TanStack Query-FF4154?logo=reactquery&logoColor=white&style=for-the-badge" height="36" />
-</div>
-
-### Collaboration
-
-<div align="left">
-  <img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white&style=for-the-badge" height="36" />
-  <img src="https://img.shields.io/badge/Figma-F24E1E?logo=figma&logoColor=white&style=for-the-badge" height="36" />
-  <img src="https://img.shields.io/badge/Notion-000000?logo=notion&logoColor=white&style=for-the-badge" height="36" />
-  <img src="https://img.shields.io/badge/Slack-4A154B?logo=slack&logoColor=white&style=for-the-badge" height="36" />
-</div>
-
-<br/>
-
----
-
-### My Stats
-
-<div align="center">
-
-  <!-- GitHub Stats -->
-  <picture>
-    <source
-      media="(prefers-color-scheme: dark)"
-      srcset="https://github-readme-stats-garlatonic.vercel.app/api?username=garlatonic&show_icons=true&count_private=true&theme=dark&hide_border=true&include_all_commits=true&hide_rank=true"
-    />
-    <source
-      media="(prefers-color-scheme: light)"
-      srcset="https://github-readme-stats-garlatonic.vercel.app/api?username=garlatonic&show_icons=true&count_private=true&theme=default&hide_border=true&include_all_commits=true&hide_rank=true"
-    />
-    <img
-      alt="garlatonic's GitHub stats"
-      src="https://github-readme-stats-garlatonic.vercel.app/api?username=garlatonic&show_icons=true&count_private=true&theme=default&hide_border=true&include_all_commits=true&hide_rank=true"
-      height="155"
-    />
-  </picture>
-
-  <!-- Top Languages -->
-  <picture>
-    <source
-      media="(prefers-color-scheme: dark)"
-      srcset="https://github-readme-stats-garlatonic.vercel.app/api/top-langs?username=garlatonic&layout=donut&theme=dark&hide_border=true"
-    />
-    <source
-      media="(prefers-color-scheme: light)"
-      srcset="https://github-readme-stats-garlatonic.vercel.app/api/top-langs?username=garlatonic&layout=donut&theme=default&hide_border=true"
-    />
-    <img
-      alt="Most used languages"
-      src="https://github-readme-stats-garlatonic.vercel.app/api/top-langs?username=garlatonic&layout=donut&theme=default&hide_border=true"
-      height="155"
-    />
-  </picture>
-
-  <!-- Streak -->
-  <picture>
-    <source
-      media="(prefers-color-scheme: dark)"
-      srcset="https://streak-stats.demolab.com?user=garlatonic&theme=dark&hide_border=true&locale=ko"
-    />
-    <source
-      media="(prefers-color-scheme: light)"
-      srcset="https://streak-stats.demolab.com?user=garlatonic&theme=default&hide_border=true&locale=ko"
-    />
-    <img
-      alt="GitHub streak"
-      src="https://streak-stats.demolab.com?user=garlatonic&theme=default&hide_border=true&locale=ko"
-      height="155"
-    />
-  </picture>
-
-</div>
-
-<br/>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/garlatonic/garlatonic/output/pacman-contribution-graph-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/garlatonic/garlatonic/output/pacman-contribution-graph.svg" />
-  <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/garlatonic/garlatonic/output/pacman-contribution-graph.svg" />
-</picture>
+[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=flat-square&logo=githubpages&logoColor=white)](https://garlatonic.github.io)
+[![TIL](https://img.shields.io/badge/TIL-181717?style=flat-square&logo=markdown&logoColor=white)](https://garlatonic.github.io/notes)
+[![Velog](https://img.shields.io/badge/Velog-20C997?style=flat-square&logo=velog&logoColor=white)](https://velog.io/@garlatonic)
