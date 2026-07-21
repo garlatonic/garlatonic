@@ -14,7 +14,9 @@
 
 - **Education:** 조선대학교 기계공학과 · 정보통신공학과 졸업
 - **Experience:** 프로그래머스 데브코스 - 프론트엔드 과정 수료
-- **Career:** 2022.05 – 2025.04 · 케이에이치이노베이션 기술개발팀 (웹 퍼블리싱 · 프론트엔드 개발)
+- **Career:**
+  - 2026.07 - current · 모리엔티드 글로벌마케팅팀 (프론트엔드 개발)
+  - 2022.05 – 2025.04 · 케이에이치이노베이션 기술개발팀 (웹 퍼블리싱 · 프론트엔드 개발)
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/garlatonic/)
 [![Email](https://img.shields.io/badge/Email-03C75A?style=flat-square&logo=naver&logoColor=white)](mailto:sangapark34@naver.com)
